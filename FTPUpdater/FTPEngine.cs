@@ -20,10 +20,10 @@ namespace FTPUpdater
             try
             {
                 List<Version> directorys = new List<Version>();
-                FtpWebRequest ftpWebRequest = (FtpWebRequest)WebRequest.Create(FtpUrl);
+                FtpWebRequest ftpWebRequest = (FtpWebRequest) WebRequest.Create(FtpUrl);
                 ftpWebRequest.Credentials = FtpCredentials;
                 ftpWebRequest.Method = WebRequestMethods.Ftp.ListDirectory;
-                FtpWebResponse response = (FtpWebResponse)ftpWebRequest.GetResponse();
+                FtpWebResponse response = (FtpWebResponse) ftpWebRequest.GetResponse();
                 StreamReader streamReader = new StreamReader(response.GetResponseStream() ?? throw new Exception("Respose is null"));
                 string line = streamReader.ReadLine();
                 while (!string.IsNullOrEmpty(line))
@@ -44,11 +44,11 @@ namespace FTPUpdater
 
         private static void DownloadFtpDirectory(string url, string localPath)
         {
-            FtpWebRequest listRequest = (FtpWebRequest)WebRequest.Create(url);
+            FtpWebRequest listRequest = (FtpWebRequest) WebRequest.Create(url);
             listRequest.Method = WebRequestMethods.Ftp.ListDirectoryDetails;
             listRequest.Credentials = FtpCredentials;
             List<string> lines = new List<string>();
-            using (FtpWebResponse listResponse = (FtpWebResponse)listRequest.GetResponse())
+            using (FtpWebResponse listResponse = (FtpWebResponse) listRequest.GetResponse())
             using (Stream listStream = listResponse.GetResponseStream())
             using (StreamReader listReader = new StreamReader(listStream ?? throw new Exception("Value cannnot be null!")))
             {
@@ -60,12 +60,12 @@ namespace FTPUpdater
 
             foreach (string line in lines)
             {
-                string[] tokens = line.Split(new[] { ' ' }, 9, StringSplitOptions.RemoveEmptyEntries);
+                string[] tokens = line.Split(new[] {' '}, 9, StringSplitOptions.RemoveEmptyEntries);
                 string name = tokens[8];
                 string permissions = tokens[0];
                 string localFilePath = Path.Combine(localPath, name);
                 string fileUrl = url + name;
-                if (permissions[0] == 'd')// this is a directory
+                if (permissions[0] == 'd') // this is a directory
                 {
                     if (!Directory.Exists(localFilePath))
                     {
@@ -79,17 +79,25 @@ namespace FTPUpdater
 
                     DownloadFtpDirectory(fileUrl + "/", localFilePath);
                 }
-                else// this is a file
+                else // this is a file
                 {
-                    FtpWebRequest downloadRequest = (FtpWebRequest)WebRequest.Create(fileUrl);
+                    FtpWebRequest downloadRequest = (FtpWebRequest) WebRequest.Create(fileUrl);
                     downloadRequest.Method = WebRequestMethods.Ftp.DownloadFile;
                     downloadRequest.Credentials = FtpCredentials;
                     try
                     {
-
-                        if(File.Exists(localFilePath))
-                            File.Delete(localFilePath);
-                        using (FtpWebResponse downloadResponse = (FtpWebResponse)downloadRequest.GetResponse())
+                        if (File.Exists(localFilePath))
+                        {
+                            if (Path.GetFileName(localFilePath) == "FTPUpdater.exe")
+                            {
+                                File.Move(Path.Combine(Program.CurrentDirectory, "FTPUpdater.exe"), Path.Combine(Program.CurrentDirectory, "FTPUpdater.exe_OLD"));       
+                            }
+                            else
+                            {
+                                File.Delete(localFilePath);    
+                            }
+                        }
+                        using (FtpWebResponse downloadResponse = (FtpWebResponse) downloadRequest.GetResponse())
                         using (Stream sourceStream = downloadResponse.GetResponseStream())
                         using (Stream targetStream = File.Create(localFilePath))
                         {
@@ -103,7 +111,7 @@ namespace FTPUpdater
                     }
                     catch (WebException e)
                     {
-                        MessageBox.Show(fileUrl + " : " + ((FtpWebResponse)e.Response).StatusDescription);
+                        MessageBox.Show(fileUrl + " : " + ((FtpWebResponse) e.Response).StatusDescription);
                     }
                 }
             }
@@ -116,6 +124,11 @@ namespace FTPUpdater
                 MessageBox.Show("Invalid directory!");
                 return;
             }
+            
+            // Delete old ftp updater
+            if(File.Exists(Path.Combine(Program.CurrentDirectory, "FTPUpdater.exe_OLD")))
+                File.Delete(Path.Combine(Program.CurrentDirectory, "FTPUpdater.exe_OLD"));
+
             try
             {
                 DownloadFtpDirectory(FtpUrl + latest + "/", Program.CurrentDirectory);

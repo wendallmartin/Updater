@@ -58,7 +58,10 @@ namespace FTPUpdater
 
         public static void StartParentProcess()
         {
-            Process.Start(Path.Combine(Program.CurrentDirectory, Program.ParentProcess));
+            var startinfo = new ProcessStartInfo();
+            startinfo.WorkingDirectory = CurrentDirectory;
+            startinfo.FileName = Path.Combine(CurrentDirectory, ParentProcess);
+            Process.Start(startinfo);
         }
     }
 }

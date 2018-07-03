@@ -68,11 +68,10 @@ namespace FTPUpdater
         {
             if (!string.IsNullOrEmpty(VersionBox.Text) && _versions.Any(v => v.ToString() == VersionBox.Text))
             {
-                Program.StopParentProcess();// kills the process given at startup threw command line params
-                FTPEngine.Update(new Version(VersionBox.Text));
-                Program.StartParentProcess();
-                Close();
-                return;
+                    Program.StopParentProcess();// kills the process given at startup threw command line params
+                    FTPEngine.Update(new Version(VersionBox.Text));
+                    Program.StartParentProcess();
+                    Close();
             }
         }
     }
