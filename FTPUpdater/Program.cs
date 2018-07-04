@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using System.Windows;
 
 namespace FTPUpdater
@@ -17,13 +16,7 @@ namespace FTPUpdater
         public static string CurrentDirectory;
 
         public static string ParentProcess = "";
-
-        /// <summary>
-        /// The fourth arg that equals false if
-        /// we don't show "Up to date" dialog if up to date.
-        /// </summary>
-        public static string UpToDate;
-
+        
         [STAThread]
         private static void Main(string[] args)
         {
@@ -37,44 +30,24 @@ namespace FTPUpdater
             {
                 ParentProcess = args[2];
             }
-
-            if (args.Length >= 4)
-            {
-                UpToDate = args[3];
-            }
-
+            
             CurrentVersion = new Version(args[0]);
             CurrentDirectory = args[1];
-            var versions = FTPEngine.GetUpdateVersions();
-            versions.Sort();
-            if (versions.Last() > new Version(args[0]))
+
+            try
             {
-                MessageBoxResult result = MessageBox.Show("Update available. Update now?", "Update", MessageBoxButton.YesNo, MessageBoxImage.Question);
-                if (result == MessageBoxResult.Yes)
-                {
-                    try
-                    {
-                        UpdateWindow window = new UpdateWindow();
-                        window.ShowDialog();
-                    }
-                    catch (Exception) // Other wise if the server is wrong or somethingwe get a hidious error message
-                    {
-                        // do nothing
-                    }
-                }    
+                UpdateWindow window = new UpdateWindow();
+                window.ShowDialog();
             }
-            else
+            catch (Exception )// Other wise if the server is wrong or somethingwe get a hidious error message
             {
-                if (UpToDate != "false")
-                {
-                    MessageBox.Show("Up to date!");
-                }       
+                // do nothing
             }
         }
         
         public static void StopParentProcess()
         {
-            if(string.IsNullOrEmpty(ParentProcess))
+            if(string.IsNullOrEmpty(Program.ParentProcess))
                 return;
             
             foreach (Process process in Process.GetProcessesByName(Program.ParentProcess))
