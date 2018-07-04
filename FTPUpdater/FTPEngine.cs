@@ -121,7 +121,7 @@ namespace FTPUpdater
         {
             if (Program.CurrentDirectory == "" || !Directory.Exists(Program.CurrentDirectory))
             {
-                MessageBox.Show("Invalid directory!");
+                MessageBox.Show($"Invalid directory!{Program.CurrentDirectory}");
                 return;
             }
             
@@ -134,9 +134,9 @@ namespace FTPUpdater
                 DownloadFtpDirectory(FtpUrl + latest + "/", Program.CurrentDirectory);
                 MessageBox.Show("Update successful!");
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                MessageBox.Show("Update failed!");
+                MessageBox.Show($"Update failed! {e.Message}");
             }
         }
     }
