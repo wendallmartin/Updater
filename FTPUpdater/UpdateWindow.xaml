@@ -8,9 +8,8 @@
         WindowStyle="ToolWindow"
         Title="UpdateWindow" Height="205.642" Width="221.984">
     <Grid>
-        <ProgressBar HorizontalAlignment="Center" Height="20" VerticalAlignment="Bottom" Width="100" Margin="0,0,0,65"/>
         <ComboBox x:Name="VersionBox" Text="Version" HorizontalAlignment="Center" VerticalAlignment="Top" Width="120" Margin="0,50,0,0"/>
         <Label Content="Select version number" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,21,0,0"/>
-        <Button Content="Update" HorizontalAlignment="Center" VerticalAlignment="Top" Width="74" Margin="0,133,0,0" Click="UpdateButtonClick"/>
+        <Button x:Name="UpdateButton" Content="Update" HorizontalAlignment="Center" VerticalAlignment="Top" Width="74" Margin="0,133,0,0" Click="UpdateButtonClick"/>
     </Grid>
 </Window>

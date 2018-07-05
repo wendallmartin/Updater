@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -14,7 +15,8 @@ namespace FTPUpdater
     public partial class UpdateWindow
     {
         private readonly List<Version> _versions;
-        
+        private readonly object _updateLock = new object();
+
         public UpdateWindow()
         {
             InitializeComponent();
@@ -66,12 +68,19 @@ namespace FTPUpdater
         
         private void UpdateButtonClick(object sender, System.Windows.RoutedEventArgs e)
         {
-            if (!string.IsNullOrEmpty(VersionBox.Text) && _versions.Any(v => v.ToString() == VersionBox.Text))
+            lock (_updateLock)
             {
-                    Program.StopParentProcess();// kills the process given at startup threw command line params
-                    FTPEngine.Update(new Version(VersionBox.Text));
-                    Program.StartParentProcess();
-                    Close();
+                string version = VersionBox.Text;
+                if (!string.IsNullOrEmpty(version) && _versions.Any(v => v.ToString() == version))
+                {
+                    new Thread(() =>
+                    {
+                        Program.StopParentProcess(); // kills the process given at startup threw command line params
+                        FTPEngine.Update(new Version(version));
+                        Program.StartParentProcess();
+                        Dispatcher.Invoke(Close);    
+                    }).Start();
+                }    
             }
         }
     }

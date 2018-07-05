@@ -17,9 +17,9 @@ namespace FTPUpdater
         /// <returns></returns>
         public static List<Version> GetUpdateVersions()
         {
+            List<Version> directorys = new List<Version>();
             try
             {
-                List<Version> directorys = new List<Version>();
                 FtpWebRequest ftpWebRequest = (FtpWebRequest) WebRequest.Create(FtpUrl);
                 ftpWebRequest.Credentials = FtpCredentials;
                 ftpWebRequest.Method = WebRequestMethods.Ftp.ListDirectory;
@@ -35,10 +35,10 @@ namespace FTPUpdater
                 streamReader.Close();
                 return directorys;
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                Console.WriteLine(e);
-                throw;
+                // do nothing
+                return directorys;
             }
         }
 
@@ -121,7 +121,7 @@ namespace FTPUpdater
         {
             if (Program.CurrentDirectory == "" || !Directory.Exists(Program.CurrentDirectory))
             {
-                MessageBox.Show("Invalid directory!");
+                MessageBox.Show($"Invalid directory!{Program.CurrentDirectory}");
                 return;
             }
             
@@ -134,10 +134,10 @@ namespace FTPUpdater
                 DownloadFtpDirectory(FtpUrl + latest + "/", Program.CurrentDirectory);
                 MessageBox.Show("Update successful!");
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                MessageBox.Show("Update failed!");
+                MessageBox.Show($"Update failed! {e.Message}");
             }
-        }
+        }    
     }
 }
