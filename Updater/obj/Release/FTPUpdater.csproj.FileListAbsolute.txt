@@ -1,0 +1,14 @@
+C:\Users\Wendall Martin\Source\Repos\Updater\FTPUpdater\FTPUpdater\obj\Release\FTPUpdater.csprojResolveAssemblyReference.cache
+C:\Users\Wendall Martin\Source\Repos\Updater\FTPUpdater\FTPUpdater\obj\Release\UpdateWindow.g.cs
+C:\Users\Wendall Martin\Source\Repos\Updater\FTPUpdater\FTPUpdater\obj\Release\FTPUpdater_MarkupCompile.cache
+C:\Users\Wendall Martin\Source\Repos\Updater\FTPUpdater\FTPUpdater\obj\Release\FTPUpdater_MarkupCompile.lref
+C:\Users\Wendall Martin\Source\Repos\Updater\FTPUpdater\FTPUpdater\obj\Release\UpdateWindow.baml
+C:\Users\Wendall Martin\Source\Repos\Updater\FTPUpdater\FTPUpdater\obj\Release\FTPUpdater.g.resources
+C:\Users\Wendall Martin\Source\Repos\Updater\FTPUpdater\FTPUpdater\obj\Release\FTPUpdater.Properties.Resources.resources
+C:\Users\Wendall Martin\Source\Repos\Updater\FTPUpdater\FTPUpdater\obj\Release\FTPUpdater.csproj.GenerateResource.Cache
+C:\Users\Wendall Martin\Source\Repos\Updater\FTPUpdater\FTPUpdater\obj\Release\FTPUpdater.csproj.CoreCompileInputs.cache
+C:\Users\Wendall Martin\Source\Repos\Updater\FTPUpdater\FTPUpdater\obj\Release\FTPUpdater.exe
+C:\Users\Wendall Martin\Source\Repos\Updater\FTPUpdater\FTPUpdater\obj\Release\FTPUpdater.pdb
+C:\Users\Wendall Martin\Source\Repos\Updater\FTPUpdater\FTPUpdater\bin\Release\FTPUpdater.exe.config
+C:\Users\Wendall Martin\Source\Repos\Updater\FTPUpdater\FTPUpdater\bin\Release\FTPUpdater.exe
+C:\Users\Wendall Martin\Source\Repos\Updater\FTPUpdater\FTPUpdater\bin\Release\FTPUpdater.pdb

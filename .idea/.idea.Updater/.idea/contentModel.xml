@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Wendall Martin\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_Updater.1019297894.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Wendall Martin\Source\Repos\Updater\Updater" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Updater" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="DetailVersion.cs" t="Include" />
+        <e p="FTPEngine.cs" t="Include" />
+        <e p="HttpEngine.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+        </e>
+        <e p="UpdateEngine.cs" t="Include" />
+        <e p="Updater.csproj" t="IncludeRecursive" />
+        <e p="Updater.ico" t="Include" />
+        <e p="UpdateWindow.xaml" t="Include" />
+        <e p="UpdateWindow.xaml.cs" t="Include" />
+      </e>
+      <e p="Updater.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>

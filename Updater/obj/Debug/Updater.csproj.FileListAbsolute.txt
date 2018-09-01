@@ -1,0 +1,14 @@
+C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\bin\Debug\Updater.exe.config
+C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\bin\Debug\Updater.exe
+C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\bin\Debug\Updater.pdb
+C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\Updater.csprojResolveAssemblyReference.cache
+C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\UpdateWindow.g.cs
+C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\Updater_MarkupCompile.cache
+C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\Updater_MarkupCompile.lref
+C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\UpdateWindow.baml
+C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\Updater.g.resources
+C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\Updater.Properties.Resources.resources
+C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\Updater.csproj.GenerateResource.cache
+C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\Updater.csproj.CoreCompileInputs.cache
+C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\Updater.exe
+C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\Updater.pdb

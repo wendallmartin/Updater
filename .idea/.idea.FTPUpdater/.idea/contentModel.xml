@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Wendall Martin\.Rider2018.1\system\resharper-host\Local\Transient\ReSharperHost\v12\SolutionCaches\_FTPUpdater.-1391493544.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Wendall Martin\Source\Repos\Updater\Updater" t="IncludeFlat">
+      <e p="FTPUpdater.sln" t="IncludeFlat" />
+      <e p="Updater\Updater.csproj" t="IncludeRecursive" />
+    </e>
+  </component>
+</project>

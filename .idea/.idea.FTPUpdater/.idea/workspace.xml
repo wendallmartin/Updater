@@ -1,0 +1,1327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b8c69077-7d95-4933-96ba-cf8cafd134f3" name="Default" comment="Remove busy spiner.">
+      <change afterPath="$PROJECT_DIR$/FTPUpdater/DetailVersion.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FTPUpdater/HttpEngine.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FTPUpdater/UpdateEngine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FTPUpdater.sln" beforeDir="false" afterPath="$PROJECT_DIR$/FTPUpdater.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FTPUpdater.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/FTPUpdater.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FTPUpdater/FTPEngine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FTPUpdater/FTPEngine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FTPUpdater/FTPUpdater.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FTPUpdater/FTPUpdater.ico" beforeDir="false" afterPath="$PROJECT_DIR$/FTPUpdater/Updater.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FTPUpdater/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FTPUpdater/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FTPUpdater/Properties/AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FTPUpdater/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FTPUpdater/Properties/Resources.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FTPUpdater/Properties/Resources.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FTPUpdater/UpdateWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FTPUpdater/UpdateWindow.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FTPUpdater/UpdateWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FTPUpdater/UpdateWindow.xaml.cs" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DockManager">
+    <window id="3">
+      <content type="file-editors">
+        <state>
+          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+            <file leaf-file-name="FTPEngine.cs" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/FTPUpdater/FTPEngine.cs">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="558">
+                    <caret line="124" column="29" selection-start-line="124" selection-start-column="29" selection-end-line="124" selection-end-column="29" />
+                    <folding>
+                      <marker date="1535801251798" expanded="false" signature="6:104" ph="..." />
+                      <marker date="1535801251798" expanded="true" signature="126:6033" ph="{...}" />
+                      <marker date="1535801251798" expanded="true" signature="170:6031" ph="{...}" />
+                      <marker date="1535801251798" expanded="true" signature="405:438" ph="{...}" />
+                      <marker date="1535801251798" expanded="true" signature="448:585" ph="/// Returns list of Versions available on ftp update server. ... " />
+                      <marker date="1535801251798" expanded="true" signature="649:1702" ph="{...}" />
+                      <marker date="1535801251798" expanded="true" signature="747:1569" ph="{...}" />
+                      <marker date="1535801251798" expanded="true" signature="1315:1481" ph="{...}" />
+                      <marker date="1535801251798" expanded="true" signature="1599:1692" ph="{...}" />
+                      <marker date="1535801251798" expanded="true" signature="1777:5249" ph="{...}" />
+                      <marker date="1535801251798" expanded="true" signature="2341:2507" ph="{...}" />
+                      <marker date="1535801251798" expanded="true" signature="2403:2493" ph="{...}" />
+                      <marker date="1535801251798" expanded="true" signature="2551:5239" ph="{...}" />
+                      <marker date="1535801251798" expanded="true" signature="2936:3382" ph="{...}" />
+                      <marker date="1535801251798" expanded="true" signature="3012:3122" ph="{...}" />
+                      <marker date="1535801251798" expanded="true" signature="3206:3297" ph="{...}" />
+                      <marker date="1535801251798" expanded="true" signature="3421:5225" ph="{...}" />
+                      <marker date="1535801251798" expanded="true" signature="3706:5012" ph="{...}" />
+                      <marker date="1535801251798" expanded="true" signature="3784:4308" ph="{...}" />
+                      <marker date="1535801251798" expanded="true" signature="3895:4125" ph="{...}" />
+                      <marker date="1535801251798" expanded="true" signature="4158:4282" ph="{...}" />
+                      <marker date="1535801251798" expanded="true" signature="4593:4990" ph="{...}" />
+                      <marker date="1535801251798" expanded="true" signature="4835:4964" ph="{...}" />
+                      <marker date="1535801251798" expanded="true" signature="5055:5207" ph="{...}" />
+                      <marker date="1535801251798" expanded="true" signature="5303:6021" ph="{...}" />
+                      <marker date="1535801251798" expanded="true" signature="5408:5524" ph="{...}" />
+                      <marker date="1535801251798" expanded="true" signature="5773:5883" ph="{...}" />
+                      <marker date="1535801251798" expanded="true" signature="5915:6011" ph="{...}" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="UpdateWindow.xaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FTPUpdater/UpdateWindow.xaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="113" selection-start-line="14" selection-start-column="113" selection-end-line="14" selection-end-column="113" />
+              <folding>
+                <marker date="1535800266070" expanded="true" signature="0:1452" ph="&lt;&lt;Grid&gt;&#10;        &lt;ComboBox x:Name=&quot;VersionBox&quot; Text=&quot;Version&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;120&quot; Margin=&quot;0,44,0,0&quot; SelectionChanged = &quot;OnSelectionChanged&quot;/&gt;&#10;        &lt;Label Content=&quot;Select version number&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,14,0,0&quot;/&gt;&#10;        &lt;TextBlock x:Name=&quot;UpdateDetails&quot; HorizontalAlignment=&quot;Center&quot; Height=&quot;57&quot; VerticalAlignment=&quot;Top&quot; TextWrapping=&quot;WrapWithOverflow&quot; Width=&quot;194&quot; Margin=&quot;0,76,0,0&quot; /&gt;&#10;        &lt;Button x:Name=&quot;UpdateButton&quot; Content=&quot;Update&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;74&quot; IsEnabled = &quot;False&quot; Margin=&quot;0,160,0,0&quot; Click=&quot;UpdateButtonClick&quot;/&gt;&#10;        &lt;ProgressBar x:Name=&quot;ProgressBar&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Visibility=&quot;Hidden&quot; Height=&quot;18&quot; Width=&quot;126&quot; Margin=&quot;0,135,0,0&quot;/&gt;&#10;        &lt;Label x:Name=&quot;BytesLabel&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,131,0,0&quot;/&gt;&#10;    &lt;/Grid&gt;.../&gt;" />
+                <marker date="1535800266070" expanded="true" signature="499:1442" ph="&lt;&lt;ComboBox x:Name=&quot;VersionBox&quot; Text=&quot;Version&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;120&quot; Margin=&quot;0,44,0,0&quot; SelectionChanged = &quot;OnSelectionChanged&quot;/&gt; &lt;Label Content=&quot;Select version number&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,14,0,0&quot;/&gt; &lt;TextBlock x:Name=&quot;UpdateDetails&quot; HorizontalAlignment=&quot;Center&quot; Height=&quot;57&quot; VerticalAlignment=&quot;Top&quot; TextWrapping=&quot;WrapWithOverflow&quot; Width=&quot;194&quot; Margin=&quot;0,76,0,0&quot; /&gt; &lt;Button x:Name=&quot;UpdateButton&quot; Content=&quot;Update&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;74&quot; IsEnabled = &quot;False&quot; Margin=&quot;0,160,0,0&quot; Click=&quot;UpdateButtonClick&quot;/&gt; &lt;ProgressBar x:Name=&quot;ProgressBar&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Visibility=&quot;Hidden&quot; Height=&quot;18&quot; Width=&quot;126&quot; Margin=&quot;0,135,0,0&quot;/&gt; &lt;Label x:Name=&quot;BytesLabel&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,131,0,0&quot;/&gt;.../&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Program.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FTPUpdater/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1455">
+              <caret line="102" column="12" selection-start-line="102" selection-start-column="12" selection-end-line="102" selection-end-column="12" />
+              <folding>
+                <marker date="1535764920495" expanded="false" signature="6:131" ph="..." />
+                <marker date="1535764920495" expanded="true" signature="153:3360" ph="{...}" />
+                <marker date="1535764920495" expanded="true" signature="180:3358" ph="{...}" />
+                <marker date="1535764920495" expanded="true" signature="305:452" ph="/// Directory where the update is downloaded to ... " />
+                <marker date="1535764920495" expanded="true" signature="559:704" ph="/// The fourth arg that equals false if ... " />
+                <marker date="1535764920495" expanded="true" signature="812:2746" ph="{...}" />
+                <marker date="1535764920495" expanded="true" signature="855:1030" ph="{...}" />
+                <marker date="1535764920495" expanded="true" signature="1065:1134" ph="{...}" />
+                <marker date="1535764920495" expanded="true" signature="1169:1233" ph="{...}" />
+                <marker date="1535764920495" expanded="true" signature="1541:2643" ph="{...}" />
+                <marker date="1535764920495" expanded="true" signature="1623:2404" ph="{...}" />
+                <marker date="1535764920495" expanded="true" signature="1853:2382" ph="{...}" />
+                <marker date="1535764920495" expanded="true" signature="1903:2082" ph="{...}" />
+                <marker date="1535764920495" expanded="true" signature="2207:2360" ph="{...}" />
+                <marker date="1535764920495" expanded="true" signature="2425:2613" ph="{...}" />
+                <marker date="1535764920495" expanded="true" signature="2488:2588" ph="{...}" />
+                <marker date="1535764920495" expanded="true" signature="2660:2736" ph="{...}" />
+                <marker date="1535764920495" expanded="true" signature="2802:3054" ph="{...}" />
+                <marker date="1535764920495" expanded="true" signature="2984:3044" ph="{...}" />
+                <marker date="1535764920495" expanded="true" signature="3103:3352" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DetailVersion.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FTPUpdater/DetailVersion.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+              <folding>
+                <marker date="1535665241802" expanded="true" signature="35:393" ph="{...}" />
+                <marker date="1535665241802" expanded="true" signature="68:391" ph="{...}" />
+                <marker date="1535665241802" expanded="true" signature="212:296" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Updater.ico" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FTPUpdater/Updater.ico">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="Resources.Designer.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FTPUpdater/Properties/Resources.Designer.cs">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="HttpEngine.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FTPUpdater/HttpEngine.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1695">
+              <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
+              <folding>
+                <marker date="1535801464358" expanded="true" signature="6:300" ph="..." />
+                <marker date="1535801464358" expanded="true" signature="367:4282" ph="{...}" />
+                <marker date="1535801464358" expanded="true" signature="594:731" ph="/// Returns list of Versions available on ftp update server. ... " />
+                <marker date="1535801464358" expanded="true" signature="795:2212" ph="{...}" />
+                <marker date="1535801464358" expanded="true" signature="840:2171" ph="{...}" />
+                <marker date="1535801464358" expanded="true" signature="929:2034" ph="{...}" />
+                <marker date="1535801464358" expanded="true" signature="1113:2016" ph="{...}" />
+                <marker date="1535801464358" expanded="true" signature="1185:1994" ph="{...}" />
+                <marker date="1535801464358" expanded="true" signature="1275:1968" ph="{...}" />
+                <marker date="1535801464358" expanded="true" signature="1341:1750" ph="{...}" />
+                <marker date="1535801464358" expanded="true" signature="1519:1716" ph="{...}" />
+                <marker date="1535801464358" expanded="true" signature="1802:1938" ph="{...}" />
+                <marker date="1535801464358" expanded="true" signature="2070:2157" ph="{...}" />
+                <marker date="1535801464358" expanded="true" signature="2287:2768" ph="{...}" />
+                <marker date="1535801464358" expanded="true" signature="2526:2758" ph="{...}" />
+                <marker date="1535801464358" expanded="true" signature="2851:2904" ph="{...}" />
+                <marker date="1535801464358" expanded="true" signature="2995:3277" ph="{...}" />
+                <marker date="1535801464358" expanded="true" signature="3331:4276" ph="{...}" />
+                <marker date="1535801464358" expanded="true" signature="3389:3505" ph="{...}" />
+                <marker date="1535801464358" expanded="true" signature="3567:3664" ph="{...}" />
+                <marker date="1535801464358" expanded="true" signature="3959:4137" ph="{...}" />
+                <marker date="1535801464358" expanded="true" signature="4169:4266" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UpdateWindow.xaml.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FTPUpdater/UpdateWindow.xaml.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1500">
+              <caret line="100" column="43" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
+              <folding>
+                <marker date="1535805466490" expanded="true" signature="6:261" ph="..." />
+                <marker date="1535805466490" expanded="true" signature="290:370" ph="/// Interaction logic for UpdateWindow.xaml ... " />
+                <marker date="1535805466490" expanded="true" signature="408:5755" ph="{...}" />
+                <marker date="1535805466490" expanded="true" signature="622:1154" ph="{...}" />
+                <marker date="1535805466490" expanded="true" signature="782:965" ph="{...}" />
+                <marker date="1535805466490" expanded="true" signature="1011:1144" ph="{...}" />
+                <marker date="1535805466490" expanded="true" signature="1239:1576" ph="{...}" />
+                <marker date="1535805466490" expanded="true" signature="1665:5392" ph="{...}" />
+                <marker date="1535805466490" expanded="true" signature="1860:5232" ph="{...}" />
+                <marker date="1535805466490" expanded="true" signature="1988:5214" ph="{...}" />
+                <marker date="1535805466490" expanded="true" signature="2051:5182" ph="{...}" />
+                <marker date="1535805466490" expanded="true" signature="2536:4952" ph="{...}" />
+                <marker date="1535805466490" expanded="true" signature="2676:4922" ph="{...}" />
+                <marker date="1535805466490" expanded="true" signature="2797:4888" ph="{...}" />
+                <marker date="1535805466490" expanded="true" signature="3738:3894" ph="{...}" />
+                <marker date="1535805466490" expanded="true" signature="3895:4850" ph="/* Debug.WriteLine(&quot;Entry name:&quot; + entry.Name); ... */" />
+                <marker date="1535805466490" expanded="true" signature="5276:5368" ph="{...}" />
+                <marker date="1535805466490" expanded="true" signature="5461:5749" ph="{...}" />
+                <marker date="1535805466490" expanded="true" signature="5560:5737" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UpdateEngine.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FTPUpdater/UpdateEngine.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+              <folding>
+                <marker date="1535801251791" expanded="false" signature="6:47" ph="..." />
+                <marker date="1535801251791" expanded="true" signature="69:612" ph="{...}" />
+                <marker date="1535801251791" expanded="true" signature="110:610" ph="{...}" />
+                <marker date="1535801251791" expanded="true" signature="264:401" ph="/// Returns list of Versions available on ftp update server. ... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Main</find>
+      <find>Directory.GetCurrentDirectory</find>
+      <find>embed</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="good" />
+      </map>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/FTPUpdater/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FTPUpdater/UpdateWindow.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FTPUpdater/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FTPUpdater/App.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FTPUpdater/FTPEngine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FTPUpdater/Properties/Resources.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FTPUpdater/HttpEngine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FTPUpdater/UpdateEngine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FTPUpdater/UpdateWindow.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FTPUpdater/DetailVersion.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/FTPUpdater/MainWindow.xaml.cs" />
+        <option value="$PROJECT_DIR$/FTPUpdater/App.xaml.cs" />
+        <option value="$PROJECT_DIR$/FTPUpdater/App.xaml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/FTPUpdater/SuperVersion.cs" />
+        <option value="$PROJECT_DIR$/FTPUpdater/UpdateEngine.cs" />
+        <option value="$PROJECT_DIR$/FTPUpdater/Program.cs" />
+        <option value="$PROJECT_DIR$/FTPUpdater/UpdateWindow.xaml" />
+        <option value="$PROJECT_DIR$/FTPUpdater/FTPEngine.cs" />
+        <option value="$PROJECT_DIR$/FTPUpdater/FTPUpdater.csproj" />
+        <option value="$PROJECT_DIR$/FTPUpdater/HttpEngine.cs" />
+        <option value="$PROJECT_DIR$/FTPUpdater/UpdateWindow.xaml.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="938" />
+    <option name="y" value="-2159" />
+    <option name="width" value="1918" />
+    <option name="height" value="2163" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="FTPUpdater (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="SearchEverywhereHistoryKey" value=".gitig&#9;FILE&#9;file://C:/Users/Wendall Martin/Source/Repos/Updater/FTPUpdater/.gitignore" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Pictures/Updateing.png" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/FTPUpdater/bin/Debug/FTPUpdater.exe" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;1.0.0.4&quot;    &quot;$USER_HOME$/Desktop/New folder(2)&quot; &quot;TheTimeApp&quot;" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FTPUpdater/bin/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/FTPUpdater/FTPUpdater.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.5" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b8c69077-7d95-4933-96ba-cf8cafd134f3" name="Default" comment="" />
+      <created>1530568922049</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1530568922049</updated>
+      <workItem from="1530568923493" duration="13000" />
+      <workItem from="1530580383380" duration="816000" />
+      <workItem from="1530651460189" duration="8702000" />
+      <workItem from="1530663412816" duration="60000" />
+      <workItem from="1530663870426" duration="2448000" />
+      <workItem from="1530705346935" duration="5291000" />
+      <workItem from="1530712850486" duration="2353000" />
+      <workItem from="1530753250470" duration="977000" />
+      <workItem from="1535577151662" duration="6236000" />
+      <workItem from="1535663904359" duration="4329000" />
+      <workItem from="1535751319784" duration="14590000" />
+      <workItem from="1535836119125" duration="196000" />
+    </task>
+    <task id="LOCAL-00001" summary="Move current FTPUpdater and download new.">
+      <created>1530661892540</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1530661892540</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add optional &quot;Up to date&quot; window pop up. Make updating icon in update window.">
+      <created>1530707658598</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1530707658598</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Revert &quot;Add optional &quot;Up to date&quot; window pop up. Make updating icon in update window.&quot;&#10;&#10;This reverts commit fbf7da5">
+      <created>1530707739850</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1530707739850</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Remove busy spiner.">
+      <created>1530754202752</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1530754202752</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="46011000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="938" y="-2159" width="1918" height="2163" extended-state="0" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Unit Tests" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.16831194" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3138686" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="NuGet" order="7" weight="0.3298611" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28094727" />
+      <window_info anchor="bottom" id="Statistic" order="7" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Build" order="8" weight="0.3277394" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.21964462" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection Results" order="8" weight="0.32954547" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32872656" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" isUnityUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Move current FTPUpdater and download new." />
+    <MESSAGE value="Add optional &quot;Up to date&quot; window pop up. Make updating icon in update window." />
+    <MESSAGE value="Revert &quot;Add optional &quot;Up to date&quot; window pop up. Make updating icon in update window.&quot;&#10;&#10;This reverts commit fbf7da5" />
+    <MESSAGE value="Remove busy spiner." />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove busy spiner." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="43" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/FTPEngine.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1800">
+          <caret line="124" column="29" selection-start-line="124" selection-start-column="29" selection-end-line="124" selection-end-column="29" />
+          <folding>
+            <marker date="1535801251798" expanded="false" signature="6:104" ph="..." />
+            <marker date="1535801251798" expanded="true" signature="126:6033" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="170:6031" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="405:438" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="448:585" ph="/// Returns list of Versions available on ftp update server. ... " />
+            <marker date="1535801251798" expanded="true" signature="649:1702" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="747:1569" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="1315:1481" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="1599:1692" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="1777:5249" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="2341:2507" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="2403:2493" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="2551:5239" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="2936:3382" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3012:3122" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3206:3297" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3421:5225" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3706:5012" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3784:4308" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3895:4125" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="4158:4282" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="4593:4990" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="4835:4964" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5055:5207" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5303:6021" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5408:5524" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5773:5883" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5915:6011" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/UpdateWindow.xaml.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="80" column="44" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="44" />
+          <folding>
+            <marker date="1535805466490" expanded="true" signature="6:261" ph="..." />
+            <marker date="1535805466490" expanded="true" signature="290:370" ph="/// Interaction logic for UpdateWindow.xaml ... " />
+            <marker date="1535805466490" expanded="true" signature="408:5755" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="622:1154" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="782:965" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1011:1144" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1239:1576" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1665:5392" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1860:5232" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1988:5214" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="2051:5182" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="2536:4952" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="2676:4922" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="2797:4888" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="3738:3894" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="3895:4850" ph="/* Debug.WriteLine(&quot;Entry name:&quot; + entry.Name); ... */" />
+            <marker date="1535805466490" expanded="true" signature="5276:5368" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="5461:5749" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="5560:5737" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/UpdateWindow.xaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding>
+            <marker date="1535800266070" expanded="true" signature="0:1452" ph="&lt;&lt;Grid&gt;&#10;        &lt;ComboBox x:Name=&quot;VersionBox&quot; Text=&quot;Version&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;120&quot; Margin=&quot;0,44,0,0&quot; SelectionChanged = &quot;OnSelectionChanged&quot;/&gt;&#10;        &lt;Label Content=&quot;Select version number&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,14,0,0&quot;/&gt;&#10;        &lt;TextBlock x:Name=&quot;UpdateDetails&quot; HorizontalAlignment=&quot;Center&quot; Height=&quot;57&quot; VerticalAlignment=&quot;Top&quot; TextWrapping=&quot;WrapWithOverflow&quot; Width=&quot;194&quot; Margin=&quot;0,76,0,0&quot; /&gt;&#10;        &lt;Button x:Name=&quot;UpdateButton&quot; Content=&quot;Update&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;74&quot; IsEnabled = &quot;False&quot; Margin=&quot;0,160,0,0&quot; Click=&quot;UpdateButtonClick&quot;/&gt;&#10;        &lt;ProgressBar x:Name=&quot;ProgressBar&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Visibility=&quot;Hidden&quot; Height=&quot;18&quot; Width=&quot;126&quot; Margin=&quot;0,135,0,0&quot;/&gt;&#10;        &lt;Label x:Name=&quot;BytesLabel&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,131,0,0&quot;/&gt;&#10;    &lt;/Grid&gt;.../&gt;" />
+            <marker date="1535800266070" expanded="true" signature="499:1442" ph="&lt;&lt;ComboBox x:Name=&quot;VersionBox&quot; Text=&quot;Version&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;120&quot; Margin=&quot;0,44,0,0&quot; SelectionChanged = &quot;OnSelectionChanged&quot;/&gt; &lt;Label Content=&quot;Select version number&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,14,0,0&quot;/&gt; &lt;TextBlock x:Name=&quot;UpdateDetails&quot; HorizontalAlignment=&quot;Center&quot; Height=&quot;57&quot; VerticalAlignment=&quot;Top&quot; TextWrapping=&quot;WrapWithOverflow&quot; Width=&quot;194&quot; Margin=&quot;0,76,0,0&quot; /&gt; &lt;Button x:Name=&quot;UpdateButton&quot; Content=&quot;Update&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;74&quot; IsEnabled = &quot;False&quot; Margin=&quot;0,160,0,0&quot; Click=&quot;UpdateButtonClick&quot;/&gt; &lt;ProgressBar x:Name=&quot;ProgressBar&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Visibility=&quot;Hidden&quot; Height=&quot;18&quot; Width=&quot;126&quot; Margin=&quot;0,135,0,0&quot;/&gt; &lt;Label x:Name=&quot;BytesLabel&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,131,0,0&quot;/&gt;.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/Properties/AssemblyInfo.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/Properties/Resources.Designer.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/FTPEngine.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="140" column="13" selection-start-line="140" selection-start-column="13" selection-end-line="140" selection-end-column="13" />
+          <folding>
+            <marker date="1535801251798" expanded="false" signature="6:104" ph="..." />
+            <marker date="1535801251798" expanded="true" signature="126:6033" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="170:6031" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="405:438" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="448:585" ph="/// Returns list of Versions available on ftp update server. ... " />
+            <marker date="1535801251798" expanded="true" signature="649:1702" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="747:1569" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="1315:1481" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="1599:1692" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="1777:5249" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="2341:2507" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="2403:2493" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="2551:5239" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="2936:3382" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3012:3122" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3206:3297" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3421:5225" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3706:5012" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3784:4308" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3895:4125" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="4158:4282" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="4593:4990" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="4835:4964" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5055:5207" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5303:6021" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5408:5524" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5773:5883" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5915:6011" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/UpdateWindow.xaml.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="80" column="44" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="44" />
+          <folding>
+            <marker date="1535805466490" expanded="true" signature="6:261" ph="..." />
+            <marker date="1535805466490" expanded="true" signature="290:370" ph="/// Interaction logic for UpdateWindow.xaml ... " />
+            <marker date="1535805466490" expanded="true" signature="408:5755" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="622:1154" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="782:965" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1011:1144" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1239:1576" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1665:5392" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1860:5232" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1988:5214" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="2051:5182" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="2536:4952" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="2676:4922" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="2797:4888" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="3738:3894" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="3895:4850" ph="/* Debug.WriteLine(&quot;Entry name:&quot; + entry.Name); ... */" />
+            <marker date="1535805466490" expanded="true" signature="5276:5368" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="5461:5749" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="5560:5737" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+          <folding>
+            <marker date="1535764920495" expanded="false" signature="6:131" ph="..." />
+            <marker date="1535764920495" expanded="true" signature="153:3360" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="180:3358" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="305:452" ph="/// Directory where the update is downloaded to ... " />
+            <marker date="1535764920495" expanded="true" signature="559:704" ph="/// The fourth arg that equals false if ... " />
+            <marker date="1535764920495" expanded="true" signature="812:2746" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="855:1030" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1065:1134" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1169:1233" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1541:2643" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1623:2404" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1853:2382" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1903:2082" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2207:2360" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2425:2613" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2488:2588" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2660:2736" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2802:3054" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2984:3044" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="3103:3352" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/UpdateWindow.xaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <marker date="1535800266070" expanded="true" signature="0:1452" ph="&lt;&lt;Grid&gt;&#10;        &lt;ComboBox x:Name=&quot;VersionBox&quot; Text=&quot;Version&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;120&quot; Margin=&quot;0,44,0,0&quot; SelectionChanged = &quot;OnSelectionChanged&quot;/&gt;&#10;        &lt;Label Content=&quot;Select version number&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,14,0,0&quot;/&gt;&#10;        &lt;TextBlock x:Name=&quot;UpdateDetails&quot; HorizontalAlignment=&quot;Center&quot; Height=&quot;57&quot; VerticalAlignment=&quot;Top&quot; TextWrapping=&quot;WrapWithOverflow&quot; Width=&quot;194&quot; Margin=&quot;0,76,0,0&quot; /&gt;&#10;        &lt;Button x:Name=&quot;UpdateButton&quot; Content=&quot;Update&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;74&quot; IsEnabled = &quot;False&quot; Margin=&quot;0,160,0,0&quot; Click=&quot;UpdateButtonClick&quot;/&gt;&#10;        &lt;ProgressBar x:Name=&quot;ProgressBar&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Visibility=&quot;Hidden&quot; Height=&quot;18&quot; Width=&quot;126&quot; Margin=&quot;0,135,0,0&quot;/&gt;&#10;        &lt;Label x:Name=&quot;BytesLabel&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,131,0,0&quot;/&gt;&#10;    &lt;/Grid&gt;.../&gt;" />
+            <marker date="1535800266070" expanded="true" signature="499:1442" ph="&lt;&lt;ComboBox x:Name=&quot;VersionBox&quot; Text=&quot;Version&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;120&quot; Margin=&quot;0,44,0,0&quot; SelectionChanged = &quot;OnSelectionChanged&quot;/&gt; &lt;Label Content=&quot;Select version number&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,14,0,0&quot;/&gt; &lt;TextBlock x:Name=&quot;UpdateDetails&quot; HorizontalAlignment=&quot;Center&quot; Height=&quot;57&quot; VerticalAlignment=&quot;Top&quot; TextWrapping=&quot;WrapWithOverflow&quot; Width=&quot;194&quot; Margin=&quot;0,76,0,0&quot; /&gt; &lt;Button x:Name=&quot;UpdateButton&quot; Content=&quot;Update&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;74&quot; IsEnabled = &quot;False&quot; Margin=&quot;0,160,0,0&quot; Click=&quot;UpdateButtonClick&quot;/&gt; &lt;ProgressBar x:Name=&quot;ProgressBar&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Visibility=&quot;Hidden&quot; Height=&quot;18&quot; Width=&quot;126&quot; Margin=&quot;0,135,0,0&quot;/&gt; &lt;Label x:Name=&quot;BytesLabel&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,131,0,0&quot;/&gt;.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/Properties/AssemblyInfo.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/Properties/Resources.Designer.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/FTPEngine.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1725">
+          <caret line="119" column="30" selection-start-line="119" selection-start-column="30" selection-end-line="119" selection-end-column="30" />
+          <folding>
+            <marker date="1535801251798" expanded="false" signature="6:104" ph="..." />
+            <marker date="1535801251798" expanded="true" signature="126:6033" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="170:6031" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="405:438" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="448:585" ph="/// Returns list of Versions available on ftp update server. ... " />
+            <marker date="1535801251798" expanded="true" signature="649:1702" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="747:1569" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="1315:1481" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="1599:1692" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="1777:5249" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="2341:2507" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="2403:2493" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="2551:5239" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="2936:3382" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3012:3122" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3206:3297" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3421:5225" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3706:5012" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3784:4308" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3895:4125" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="4158:4282" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="4593:4990" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="4835:4964" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5055:5207" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5303:6021" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5408:5524" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5773:5883" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5915:6011" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/UpdateWindow.xaml.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="70" column="40" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
+          <folding>
+            <marker date="1535805466490" expanded="true" signature="6:261" ph="..." />
+            <marker date="1535805466490" expanded="true" signature="290:370" ph="/// Interaction logic for UpdateWindow.xaml ... " />
+            <marker date="1535805466490" expanded="true" signature="408:5755" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="622:1154" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="782:965" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1011:1144" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1239:1576" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1665:5392" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1860:5232" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1988:5214" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="2051:5182" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="2536:4952" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="2676:4922" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="2797:4888" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="3738:3894" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="3895:4850" ph="/* Debug.WriteLine(&quot;Entry name:&quot; + entry.Name); ... */" />
+            <marker date="1535805466490" expanded="true" signature="5276:5368" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="5461:5749" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="5560:5737" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+          <folding>
+            <marker date="1535764920495" expanded="false" signature="6:131" ph="..." />
+            <marker date="1535764920495" expanded="true" signature="153:3360" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="180:3358" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="305:452" ph="/// Directory where the update is downloaded to ... " />
+            <marker date="1535764920495" expanded="true" signature="559:704" ph="/// The fourth arg that equals false if ... " />
+            <marker date="1535764920495" expanded="true" signature="812:2746" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="855:1030" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1065:1134" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1169:1233" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1541:2643" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1623:2404" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1853:2382" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1903:2082" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2207:2360" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2425:2613" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2488:2588" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2660:2736" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2802:3054" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2984:3044" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="3103:3352" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/UpdateWindow.xaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <marker date="1535800266070" expanded="true" signature="0:1452" ph="&lt;&lt;Grid&gt;&#10;        &lt;ComboBox x:Name=&quot;VersionBox&quot; Text=&quot;Version&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;120&quot; Margin=&quot;0,44,0,0&quot; SelectionChanged = &quot;OnSelectionChanged&quot;/&gt;&#10;        &lt;Label Content=&quot;Select version number&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,14,0,0&quot;/&gt;&#10;        &lt;TextBlock x:Name=&quot;UpdateDetails&quot; HorizontalAlignment=&quot;Center&quot; Height=&quot;57&quot; VerticalAlignment=&quot;Top&quot; TextWrapping=&quot;WrapWithOverflow&quot; Width=&quot;194&quot; Margin=&quot;0,76,0,0&quot; /&gt;&#10;        &lt;Button x:Name=&quot;UpdateButton&quot; Content=&quot;Update&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;74&quot; IsEnabled = &quot;False&quot; Margin=&quot;0,160,0,0&quot; Click=&quot;UpdateButtonClick&quot;/&gt;&#10;        &lt;ProgressBar x:Name=&quot;ProgressBar&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Visibility=&quot;Hidden&quot; Height=&quot;18&quot; Width=&quot;126&quot; Margin=&quot;0,135,0,0&quot;/&gt;&#10;        &lt;Label x:Name=&quot;BytesLabel&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,131,0,0&quot;/&gt;&#10;    &lt;/Grid&gt;.../&gt;" />
+            <marker date="1535800266070" expanded="true" signature="499:1442" ph="&lt;&lt;ComboBox x:Name=&quot;VersionBox&quot; Text=&quot;Version&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;120&quot; Margin=&quot;0,44,0,0&quot; SelectionChanged = &quot;OnSelectionChanged&quot;/&gt; &lt;Label Content=&quot;Select version number&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,14,0,0&quot;/&gt; &lt;TextBlock x:Name=&quot;UpdateDetails&quot; HorizontalAlignment=&quot;Center&quot; Height=&quot;57&quot; VerticalAlignment=&quot;Top&quot; TextWrapping=&quot;WrapWithOverflow&quot; Width=&quot;194&quot; Margin=&quot;0,76,0,0&quot; /&gt; &lt;Button x:Name=&quot;UpdateButton&quot; Content=&quot;Update&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;74&quot; IsEnabled = &quot;False&quot; Margin=&quot;0,160,0,0&quot; Click=&quot;UpdateButtonClick&quot;/&gt; &lt;ProgressBar x:Name=&quot;ProgressBar&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Visibility=&quot;Hidden&quot; Height=&quot;18&quot; Width=&quot;126&quot; Margin=&quot;0,135,0,0&quot;/&gt; &lt;Label x:Name=&quot;BytesLabel&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,131,0,0&quot;/&gt;.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="63" column="26" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
+          <folding>
+            <marker date="1535764920495" expanded="false" signature="6:131" ph="..." />
+            <marker date="1535764920495" expanded="true" signature="153:3360" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="180:3358" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="305:452" ph="/// Directory where the update is downloaded to ... " />
+            <marker date="1535764920495" expanded="true" signature="559:704" ph="/// The fourth arg that equals false if ... " />
+            <marker date="1535764920495" expanded="true" signature="812:2746" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="855:1030" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1065:1134" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1169:1233" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1541:2643" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1623:2404" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1853:2382" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1903:2082" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2207:2360" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2425:2613" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2488:2588" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2660:2736" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2802:3054" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2984:3044" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="3103:3352" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/Properties/AssemblyInfo.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/Properties/Resources.Designer.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/UpdateWindow.xaml.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="71" column="34" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
+          <folding>
+            <marker date="1535805466490" expanded="true" signature="6:261" ph="..." />
+            <marker date="1535805466490" expanded="true" signature="290:370" ph="/// Interaction logic for UpdateWindow.xaml ... " />
+            <marker date="1535805466490" expanded="true" signature="408:5755" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="622:1154" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="782:965" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1011:1144" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1239:1576" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1665:5392" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1860:5232" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1988:5214" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="2051:5182" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="2536:4952" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="2676:4922" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="2797:4888" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="3738:3894" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="3895:4850" ph="/* Debug.WriteLine(&quot;Entry name:&quot; + entry.Name); ... */" />
+            <marker date="1535805466490" expanded="true" signature="5276:5368" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="5461:5749" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="5560:5737" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/FTPEngine.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="123" column="77" selection-start-line="123" selection-start-column="77" selection-end-line="123" selection-end-column="77" />
+          <folding>
+            <marker date="1535801251798" expanded="false" signature="6:104" ph="..." />
+            <marker date="1535801251798" expanded="true" signature="126:6033" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="170:6031" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="405:438" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="448:585" ph="/// Returns list of Versions available on ftp update server. ... " />
+            <marker date="1535801251798" expanded="true" signature="649:1702" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="747:1569" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="1315:1481" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="1599:1692" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="1777:5249" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="2341:2507" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="2403:2493" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="2551:5239" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="2936:3382" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3012:3122" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3206:3297" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3421:5225" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3706:5012" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3784:4308" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3895:4125" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="4158:4282" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="4593:4990" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="4835:4964" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5055:5207" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5303:6021" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5408:5524" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5773:5883" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5915:6011" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/UpdateWindow.xaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <marker date="1535800266070" expanded="true" signature="0:1452" ph="&lt;&lt;Grid&gt;&#10;        &lt;ComboBox x:Name=&quot;VersionBox&quot; Text=&quot;Version&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;120&quot; Margin=&quot;0,44,0,0&quot; SelectionChanged = &quot;OnSelectionChanged&quot;/&gt;&#10;        &lt;Label Content=&quot;Select version number&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,14,0,0&quot;/&gt;&#10;        &lt;TextBlock x:Name=&quot;UpdateDetails&quot; HorizontalAlignment=&quot;Center&quot; Height=&quot;57&quot; VerticalAlignment=&quot;Top&quot; TextWrapping=&quot;WrapWithOverflow&quot; Width=&quot;194&quot; Margin=&quot;0,76,0,0&quot; /&gt;&#10;        &lt;Button x:Name=&quot;UpdateButton&quot; Content=&quot;Update&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;74&quot; IsEnabled = &quot;False&quot; Margin=&quot;0,160,0,0&quot; Click=&quot;UpdateButtonClick&quot;/&gt;&#10;        &lt;ProgressBar x:Name=&quot;ProgressBar&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Visibility=&quot;Hidden&quot; Height=&quot;18&quot; Width=&quot;126&quot; Margin=&quot;0,135,0,0&quot;/&gt;&#10;        &lt;Label x:Name=&quot;BytesLabel&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,131,0,0&quot;/&gt;&#10;    &lt;/Grid&gt;.../&gt;" />
+            <marker date="1535800266070" expanded="true" signature="499:1442" ph="&lt;&lt;ComboBox x:Name=&quot;VersionBox&quot; Text=&quot;Version&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;120&quot; Margin=&quot;0,44,0,0&quot; SelectionChanged = &quot;OnSelectionChanged&quot;/&gt; &lt;Label Content=&quot;Select version number&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,14,0,0&quot;/&gt; &lt;TextBlock x:Name=&quot;UpdateDetails&quot; HorizontalAlignment=&quot;Center&quot; Height=&quot;57&quot; VerticalAlignment=&quot;Top&quot; TextWrapping=&quot;WrapWithOverflow&quot; Width=&quot;194&quot; Margin=&quot;0,76,0,0&quot; /&gt; &lt;Button x:Name=&quot;UpdateButton&quot; Content=&quot;Update&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;74&quot; IsEnabled = &quot;False&quot; Margin=&quot;0,160,0,0&quot; Click=&quot;UpdateButtonClick&quot;/&gt; &lt;ProgressBar x:Name=&quot;ProgressBar&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Visibility=&quot;Hidden&quot; Height=&quot;18&quot; Width=&quot;126&quot; Margin=&quot;0,135,0,0&quot;/&gt; &lt;Label x:Name=&quot;BytesLabel&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,131,0,0&quot;/&gt;.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="63" column="26" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
+          <folding>
+            <marker date="1535764920495" expanded="false" signature="6:131" ph="..." />
+            <marker date="1535764920495" expanded="true" signature="153:3360" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="180:3358" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="305:452" ph="/// Directory where the update is downloaded to ... " />
+            <marker date="1535764920495" expanded="true" signature="559:704" ph="/// The fourth arg that equals false if ... " />
+            <marker date="1535764920495" expanded="true" signature="812:2746" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="855:1030" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1065:1134" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1169:1233" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1541:2643" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1623:2404" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1853:2382" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1903:2082" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2207:2360" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2425:2613" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2488:2588" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2660:2736" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2802:3054" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2984:3044" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="3103:3352" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/Properties/AssemblyInfo.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/Properties/Resources.Designer.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/FTPEngine.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1290">
+          <caret line="86" column="23" lean-forward="true" selection-start-line="86" selection-start-column="23" selection-end-line="86" selection-end-column="23" />
+          <folding>
+            <marker date="1535801251798" expanded="false" signature="6:104" ph="..." />
+            <marker date="1535801251798" expanded="true" signature="126:6033" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="170:6031" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="405:438" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="448:585" ph="/// Returns list of Versions available on ftp update server. ... " />
+            <marker date="1535801251798" expanded="true" signature="649:1702" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="747:1569" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="1315:1481" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="1599:1692" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="1777:5249" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="2341:2507" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="2403:2493" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="2551:5239" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="2936:3382" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3012:3122" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3206:3297" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3421:5225" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3706:5012" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3784:4308" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3895:4125" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="4158:4282" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="4593:4990" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="4835:4964" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5055:5207" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5303:6021" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5408:5524" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5773:5883" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5915:6011" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/UpdateWindow.xaml.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="71" column="34" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
+          <folding>
+            <marker date="1535805466490" expanded="true" signature="6:261" ph="..." />
+            <marker date="1535805466490" expanded="true" signature="290:370" ph="/// Interaction logic for UpdateWindow.xaml ... " />
+            <marker date="1535805466490" expanded="true" signature="408:5755" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="622:1154" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="782:965" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1011:1144" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1239:1576" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1665:5392" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1860:5232" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1988:5214" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="2051:5182" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="2536:4952" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="2676:4922" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="2797:4888" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="3738:3894" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="3895:4850" ph="/* Debug.WriteLine(&quot;Entry name:&quot; + entry.Name); ... */" />
+            <marker date="1535805466490" expanded="true" signature="5276:5368" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="5461:5749" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="5560:5737" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/UpdateWindow.xaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding>
+            <marker date="1535800266070" expanded="true" signature="0:1452" ph="&lt;&lt;Grid&gt;&#10;        &lt;ComboBox x:Name=&quot;VersionBox&quot; Text=&quot;Version&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;120&quot; Margin=&quot;0,44,0,0&quot; SelectionChanged = &quot;OnSelectionChanged&quot;/&gt;&#10;        &lt;Label Content=&quot;Select version number&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,14,0,0&quot;/&gt;&#10;        &lt;TextBlock x:Name=&quot;UpdateDetails&quot; HorizontalAlignment=&quot;Center&quot; Height=&quot;57&quot; VerticalAlignment=&quot;Top&quot; TextWrapping=&quot;WrapWithOverflow&quot; Width=&quot;194&quot; Margin=&quot;0,76,0,0&quot; /&gt;&#10;        &lt;Button x:Name=&quot;UpdateButton&quot; Content=&quot;Update&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;74&quot; IsEnabled = &quot;False&quot; Margin=&quot;0,160,0,0&quot; Click=&quot;UpdateButtonClick&quot;/&gt;&#10;        &lt;ProgressBar x:Name=&quot;ProgressBar&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Visibility=&quot;Hidden&quot; Height=&quot;18&quot; Width=&quot;126&quot; Margin=&quot;0,135,0,0&quot;/&gt;&#10;        &lt;Label x:Name=&quot;BytesLabel&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,131,0,0&quot;/&gt;&#10;    &lt;/Grid&gt;.../&gt;" />
+            <marker date="1535800266070" expanded="true" signature="499:1442" ph="&lt;&lt;ComboBox x:Name=&quot;VersionBox&quot; Text=&quot;Version&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;120&quot; Margin=&quot;0,44,0,0&quot; SelectionChanged = &quot;OnSelectionChanged&quot;/&gt; &lt;Label Content=&quot;Select version number&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,14,0,0&quot;/&gt; &lt;TextBlock x:Name=&quot;UpdateDetails&quot; HorizontalAlignment=&quot;Center&quot; Height=&quot;57&quot; VerticalAlignment=&quot;Top&quot; TextWrapping=&quot;WrapWithOverflow&quot; Width=&quot;194&quot; Margin=&quot;0,76,0,0&quot; /&gt; &lt;Button x:Name=&quot;UpdateButton&quot; Content=&quot;Update&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;74&quot; IsEnabled = &quot;False&quot; Margin=&quot;0,160,0,0&quot; Click=&quot;UpdateButtonClick&quot;/&gt; &lt;ProgressBar x:Name=&quot;ProgressBar&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Visibility=&quot;Hidden&quot; Height=&quot;18&quot; Width=&quot;126&quot; Margin=&quot;0,135,0,0&quot;/&gt; &lt;Label x:Name=&quot;BytesLabel&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,131,0,0&quot;/&gt;.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+          <folding>
+            <marker date="1535764920495" expanded="false" signature="6:131" ph="..." />
+            <marker date="1535764920495" expanded="true" signature="153:3360" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="180:3358" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="305:452" ph="/// Directory where the update is downloaded to ... " />
+            <marker date="1535764920495" expanded="true" signature="559:704" ph="/// The fourth arg that equals false if ... " />
+            <marker date="1535764920495" expanded="true" signature="812:2746" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="855:1030" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1065:1134" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1169:1233" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1541:2643" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1623:2404" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1853:2382" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1903:2082" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2207:2360" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2425:2613" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2488:2588" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2660:2736" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2802:3054" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2984:3044" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="3103:3352" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/Properties/AssemblyInfo.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/Properties/Resources.Designer.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/FTPEngine.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1535801251798" expanded="false" signature="6:104" ph="..." />
+            <marker date="1535801251798" expanded="true" signature="126:6033" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="170:6031" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="405:438" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="448:585" ph="/// Returns list of Versions available on ftp update server. ... " />
+            <marker date="1535801251798" expanded="true" signature="649:1702" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="747:1569" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="1315:1481" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="1599:1692" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="1777:5249" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="2341:2507" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="2403:2493" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="2551:5239" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="2936:3382" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3012:3122" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3206:3297" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3421:5225" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3706:5012" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3784:4308" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3895:4125" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="4158:4282" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="4593:4990" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="4835:4964" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5055:5207" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5303:6021" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5408:5524" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5773:5883" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5915:6011" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/UpdateWindow.xaml.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <marker date="1535805466490" expanded="true" signature="6:261" ph="..." />
+            <marker date="1535805466490" expanded="true" signature="290:370" ph="/// Interaction logic for UpdateWindow.xaml ... " />
+            <marker date="1535805466490" expanded="true" signature="408:5755" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="622:1154" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="782:965" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1011:1144" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1239:1576" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1665:5392" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1860:5232" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1988:5214" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="2051:5182" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="2536:4952" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="2676:4922" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="2797:4888" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="3738:3894" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="3895:4850" ph="/* Debug.WriteLine(&quot;Entry name:&quot; + entry.Name); ... */" />
+            <marker date="1535805466490" expanded="true" signature="5276:5368" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="5461:5749" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="5560:5737" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/UpdateWindow.xaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding>
+            <marker date="1535800266070" expanded="true" signature="0:1452" ph="&lt;&lt;Grid&gt;&#10;        &lt;ComboBox x:Name=&quot;VersionBox&quot; Text=&quot;Version&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;120&quot; Margin=&quot;0,44,0,0&quot; SelectionChanged = &quot;OnSelectionChanged&quot;/&gt;&#10;        &lt;Label Content=&quot;Select version number&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,14,0,0&quot;/&gt;&#10;        &lt;TextBlock x:Name=&quot;UpdateDetails&quot; HorizontalAlignment=&quot;Center&quot; Height=&quot;57&quot; VerticalAlignment=&quot;Top&quot; TextWrapping=&quot;WrapWithOverflow&quot; Width=&quot;194&quot; Margin=&quot;0,76,0,0&quot; /&gt;&#10;        &lt;Button x:Name=&quot;UpdateButton&quot; Content=&quot;Update&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;74&quot; IsEnabled = &quot;False&quot; Margin=&quot;0,160,0,0&quot; Click=&quot;UpdateButtonClick&quot;/&gt;&#10;        &lt;ProgressBar x:Name=&quot;ProgressBar&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Visibility=&quot;Hidden&quot; Height=&quot;18&quot; Width=&quot;126&quot; Margin=&quot;0,135,0,0&quot;/&gt;&#10;        &lt;Label x:Name=&quot;BytesLabel&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,131,0,0&quot;/&gt;&#10;    &lt;/Grid&gt;.../&gt;" />
+            <marker date="1535800266070" expanded="true" signature="499:1442" ph="&lt;&lt;ComboBox x:Name=&quot;VersionBox&quot; Text=&quot;Version&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;120&quot; Margin=&quot;0,44,0,0&quot; SelectionChanged = &quot;OnSelectionChanged&quot;/&gt; &lt;Label Content=&quot;Select version number&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,14,0,0&quot;/&gt; &lt;TextBlock x:Name=&quot;UpdateDetails&quot; HorizontalAlignment=&quot;Center&quot; Height=&quot;57&quot; VerticalAlignment=&quot;Top&quot; TextWrapping=&quot;WrapWithOverflow&quot; Width=&quot;194&quot; Margin=&quot;0,76,0,0&quot; /&gt; &lt;Button x:Name=&quot;UpdateButton&quot; Content=&quot;Update&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;74&quot; IsEnabled = &quot;False&quot; Margin=&quot;0,160,0,0&quot; Click=&quot;UpdateButtonClick&quot;/&gt; &lt;ProgressBar x:Name=&quot;ProgressBar&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Visibility=&quot;Hidden&quot; Height=&quot;18&quot; Width=&quot;126&quot; Margin=&quot;0,135,0,0&quot;/&gt; &lt;Label x:Name=&quot;BytesLabel&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,131,0,0&quot;/&gt;.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/App.xaml.cs" />
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/App.xaml" />
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/Properties/AssemblyInfo.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/Properties/Resources.Designer.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/UpdateEngine.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding>
+            <marker date="1535801251791" expanded="false" signature="6:47" ph="..." />
+            <marker date="1535801251791" expanded="true" signature="69:612" ph="{...}" />
+            <marker date="1535801251791" expanded="true" signature="110:610" ph="{...}" />
+            <marker date="1535801251791" expanded="true" signature="264:401" ph="/// Returns list of Versions available on ftp update server. ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1455">
+          <caret line="102" column="12" selection-start-line="102" selection-start-column="12" selection-end-line="102" selection-end-column="12" />
+          <folding>
+            <marker date="1535764920495" expanded="false" signature="6:131" ph="..." />
+            <marker date="1535764920495" expanded="true" signature="153:3360" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="180:3358" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="305:452" ph="/// Directory where the update is downloaded to ... " />
+            <marker date="1535764920495" expanded="true" signature="559:704" ph="/// The fourth arg that equals false if ... " />
+            <marker date="1535764920495" expanded="true" signature="812:2746" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="855:1030" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1065:1134" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1169:1233" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1541:2643" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1623:2404" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1853:2382" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="1903:2082" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2207:2360" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2425:2613" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2488:2588" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2660:2736" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2802:3054" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="2984:3044" ph="{...}" />
+            <marker date="1535764920495" expanded="true" signature="3103:3352" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/UpdateWindow.xaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="113" selection-start-line="14" selection-start-column="113" selection-end-line="14" selection-end-column="113" />
+          <folding>
+            <marker date="1535800266070" expanded="true" signature="0:1452" ph="&lt;&lt;Grid&gt;&#10;        &lt;ComboBox x:Name=&quot;VersionBox&quot; Text=&quot;Version&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;120&quot; Margin=&quot;0,44,0,0&quot; SelectionChanged = &quot;OnSelectionChanged&quot;/&gt;&#10;        &lt;Label Content=&quot;Select version number&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,14,0,0&quot;/&gt;&#10;        &lt;TextBlock x:Name=&quot;UpdateDetails&quot; HorizontalAlignment=&quot;Center&quot; Height=&quot;57&quot; VerticalAlignment=&quot;Top&quot; TextWrapping=&quot;WrapWithOverflow&quot; Width=&quot;194&quot; Margin=&quot;0,76,0,0&quot; /&gt;&#10;        &lt;Button x:Name=&quot;UpdateButton&quot; Content=&quot;Update&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;74&quot; IsEnabled = &quot;False&quot; Margin=&quot;0,160,0,0&quot; Click=&quot;UpdateButtonClick&quot;/&gt;&#10;        &lt;ProgressBar x:Name=&quot;ProgressBar&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Visibility=&quot;Hidden&quot; Height=&quot;18&quot; Width=&quot;126&quot; Margin=&quot;0,135,0,0&quot;/&gt;&#10;        &lt;Label x:Name=&quot;BytesLabel&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,131,0,0&quot;/&gt;&#10;    &lt;/Grid&gt;.../&gt;" />
+            <marker date="1535800266070" expanded="true" signature="499:1442" ph="&lt;&lt;ComboBox x:Name=&quot;VersionBox&quot; Text=&quot;Version&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;120&quot; Margin=&quot;0,44,0,0&quot; SelectionChanged = &quot;OnSelectionChanged&quot;/&gt; &lt;Label Content=&quot;Select version number&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,14,0,0&quot;/&gt; &lt;TextBlock x:Name=&quot;UpdateDetails&quot; HorizontalAlignment=&quot;Center&quot; Height=&quot;57&quot; VerticalAlignment=&quot;Top&quot; TextWrapping=&quot;WrapWithOverflow&quot; Width=&quot;194&quot; Margin=&quot;0,76,0,0&quot; /&gt; &lt;Button x:Name=&quot;UpdateButton&quot; Content=&quot;Update&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;74&quot; IsEnabled = &quot;False&quot; Margin=&quot;0,160,0,0&quot; Click=&quot;UpdateButtonClick&quot;/&gt; &lt;ProgressBar x:Name=&quot;ProgressBar&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Visibility=&quot;Hidden&quot; Height=&quot;18&quot; Width=&quot;126&quot; Margin=&quot;0,135,0,0&quot;/&gt; &lt;Label x:Name=&quot;BytesLabel&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;0,131,0,0&quot;/&gt;.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/FTPEngine.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="124" column="29" selection-start-line="124" selection-start-column="29" selection-end-line="124" selection-end-column="29" />
+          <folding>
+            <marker date="1535801251798" expanded="false" signature="6:104" ph="..." />
+            <marker date="1535801251798" expanded="true" signature="126:6033" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="170:6031" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="405:438" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="448:585" ph="/// Returns list of Versions available on ftp update server. ... " />
+            <marker date="1535801251798" expanded="true" signature="649:1702" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="747:1569" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="1315:1481" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="1599:1692" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="1777:5249" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="2341:2507" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="2403:2493" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="2551:5239" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="2936:3382" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3012:3122" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3206:3297" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3421:5225" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3706:5012" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3784:4308" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="3895:4125" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="4158:4282" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="4593:4990" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="4835:4964" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5055:5207" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5303:6021" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5408:5524" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5773:5883" ph="{...}" />
+            <marker date="1535801251798" expanded="true" signature="5915:6011" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/HttpEngine.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1695">
+          <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
+          <folding>
+            <marker date="1535801464358" expanded="true" signature="6:300" ph="..." />
+            <marker date="1535801464358" expanded="true" signature="367:4282" ph="{...}" />
+            <marker date="1535801464358" expanded="true" signature="594:731" ph="/// Returns list of Versions available on ftp update server. ... " />
+            <marker date="1535801464358" expanded="true" signature="795:2212" ph="{...}" />
+            <marker date="1535801464358" expanded="true" signature="840:2171" ph="{...}" />
+            <marker date="1535801464358" expanded="true" signature="929:2034" ph="{...}" />
+            <marker date="1535801464358" expanded="true" signature="1113:2016" ph="{...}" />
+            <marker date="1535801464358" expanded="true" signature="1185:1994" ph="{...}" />
+            <marker date="1535801464358" expanded="true" signature="1275:1968" ph="{...}" />
+            <marker date="1535801464358" expanded="true" signature="1341:1750" ph="{...}" />
+            <marker date="1535801464358" expanded="true" signature="1519:1716" ph="{...}" />
+            <marker date="1535801464358" expanded="true" signature="1802:1938" ph="{...}" />
+            <marker date="1535801464358" expanded="true" signature="2070:2157" ph="{...}" />
+            <marker date="1535801464358" expanded="true" signature="2287:2768" ph="{...}" />
+            <marker date="1535801464358" expanded="true" signature="2526:2758" ph="{...}" />
+            <marker date="1535801464358" expanded="true" signature="2851:2904" ph="{...}" />
+            <marker date="1535801464358" expanded="true" signature="2995:3277" ph="{...}" />
+            <marker date="1535801464358" expanded="true" signature="3331:4276" ph="{...}" />
+            <marker date="1535801464358" expanded="true" signature="3389:3505" ph="{...}" />
+            <marker date="1535801464358" expanded="true" signature="3567:3664" ph="{...}" />
+            <marker date="1535801464358" expanded="true" signature="3959:4137" ph="{...}" />
+            <marker date="1535801464358" expanded="true" signature="4169:4266" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/UpdateWindow.xaml.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1500">
+          <caret line="100" column="43" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
+          <folding>
+            <marker date="1535805466490" expanded="true" signature="6:261" ph="..." />
+            <marker date="1535805466490" expanded="true" signature="290:370" ph="/// Interaction logic for UpdateWindow.xaml ... " />
+            <marker date="1535805466490" expanded="true" signature="408:5755" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="622:1154" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="782:965" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1011:1144" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1239:1576" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1665:5392" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1860:5232" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="1988:5214" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="2051:5182" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="2536:4952" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="2676:4922" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="2797:4888" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="3738:3894" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="3895:4850" ph="/* Debug.WriteLine(&quot;Entry name:&quot; + entry.Name); ... */" />
+            <marker date="1535805466490" expanded="true" signature="5276:5368" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="5461:5749" ph="{...}" />
+            <marker date="1535805466490" expanded="true" signature="5560:5737" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/DetailVersion.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding>
+            <marker date="1535665241802" expanded="true" signature="35:393" ph="{...}" />
+            <marker date="1535665241802" expanded="true" signature="68:391" ph="{...}" />
+            <marker date="1535665241802" expanded="true" signature="212:296" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/FTPUpdater.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPUpdater/Updater.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+  </component>
+</project>
