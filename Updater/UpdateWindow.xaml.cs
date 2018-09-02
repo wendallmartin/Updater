@@ -51,6 +51,7 @@ namespace FTPUpdater
         {
             if (string.IsNullOrEmpty(VersionBox.Text)) return;
             ProgressBar.Visibility = Visibility.Visible;
+            UpdateButton.IsEnabled = false;
             lock (_updateLock)
             {
                 try
@@ -60,6 +61,12 @@ namespace FTPUpdater
                     {
                         new Thread(() =>
                         {
+                            string oldName = Process.GetCurrentProcess().MainModule.FileName + "_OLD";
+                            if(File.Exists(oldName))
+                                File.Delete(oldName);
+                            
+                            File.Move(Process.GetCurrentProcess().MainModule.FileName, Process.GetCurrentProcess().MainModule.FileName +"_OLD");
+                            
                             Program.StopParentProcess(); // kills the process given at startup threw command line params
                             _updater.UpdateChangedEvent += OnUpdateChanged;
                             _updater.Update(new Version(version));
@@ -87,18 +94,6 @@ namespace FTPUpdater
                                         {
                                             File.Delete(info.FullName);
                                         }
-//                                        Debug.WriteLine("Entry name:" + entry.Name);
-//                                        if (File.Exists(Path.Combine(Program.CurrentDirectory, entry.Name)))
-//                                        {
-//                                            Debug.WriteLine(Path.Combine(Program.CurrentDirectory, entry.Name));
-//                                            File.Delete(Path.Combine(Program.CurrentDirectory, entry.Name));
-//                                        }
-//
-//                                        if (Directory.Exists(Path.Combine(Program.CurrentDirectory, entry.Name)))
-//                                        {
-//                                            Debug.WriteLine(Path.Combine(Program.CurrentDirectory, entry.Name));
-//                                            Directory.Delete(Path.Combine(Program.CurrentDirectory, entry.Name), true);
-//                                        }
                                     }
                                 }
                             }

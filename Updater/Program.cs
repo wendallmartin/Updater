@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Windows;
+using Updater;
 
 namespace FTPUpdater
 {
@@ -30,27 +31,24 @@ namespace FTPUpdater
         [STAThread]
         private static void Main(string[] args)
         {
+            Installer download = new Installer();
+            download.ShowDialog();
             if (args.Length < 2)
             {
                 MessageBox.Show("Argument missmatch!! \nArgments are: string current version, string current directory.");
                 return;
             }
-
-            if (args.Length >= 3)
-            {
-                ParentProcess = args[2];
-            }
-
-            if (args.Length >= 4)
-            {
-                UpToDate = args[3];
-            }
-
-            _updater = new HttpEngine();
+            
             CurrentVersion = new Version(args[0]);
             CurrentDirectory = args[1];
-            var versions = _updater.GetUpdateVersions();
-            versions = new List<DetailVersion>(versions.OrderBy(v => v.Version));
+
+            if (args.Length >= 3) ParentProcess = args[2];
+                
+            if (args.Length >= 4) UpToDate = args[3];
+
+            _updater = new HttpEngine();
+            
+            var versions = new List<DetailVersion>(_updater.GetUpdateVersions().OrderBy(v => v.Version));
             if (versions.Count > 0)
             {
                 if (versions.Last().Version > new Version(args[0]))

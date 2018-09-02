@@ -12,3 +12,5 @@ C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\Updater.c
 C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\Updater.csproj.CoreCompileInputs.cache
 C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\Updater.exe
 C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\Updater.pdb
+C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\Installer.g.cs
+C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\Installer.baml

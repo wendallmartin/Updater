@@ -7,7 +7,9 @@ namespace FTPUpdater
     {
         public delegate void UpdateChangedDel(double recieved, double total);
         public UpdateChangedDel UpdateChangedEvent;
-        
+
+        public string DownloadDirectory { get; internal set; }
+
         /// <summary>
         /// Returns list of Versions available on ftp update server.
         /// </summary>

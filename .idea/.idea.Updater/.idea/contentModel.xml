@@ -10,12 +10,21 @@
         <e p="DetailVersion.cs" t="Include" />
         <e p="FTPEngine.cs" t="Include" />
         <e p="HttpEngine.cs" t="Include" />
+        <e p="Installer.xaml" t="Include" />
+        <e p="Installer.xaml.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
           <e p="Resources.Designer.cs" t="Include" />
           <e p="Resources.resx" t="Include" />
+        </e>
+        <e p="States" t="Include">
+          <e p="DirectoryState.cs" t="Include" />
+          <e p="DownloadState.cs" t="Include" />
+          <e p="FinishState.cs" t="Include" />
+          <e p="UpDateState.cs" t="Include" />
+          <e p="WelcomeState.cs" t="Include" />
         </e>
         <e p="UpdateEngine.cs" t="Include" />
         <e p="Updater.csproj" t="IncludeRecursive" />
