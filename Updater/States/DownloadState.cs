@@ -1,37 +1,17 @@
-﻿using System.Windows;
-using System.Windows.Forms;
-
-namespace Updater
+﻿namespace Updater.States
 {
     public class DownloadState : UpdateState
     {
-        private static DownloadState _state;
+        public static DownloadState State { get; } = new DownloadState();
         
-        public static DownloadState State
+        public override void Previous(Installer installer)
         {
-            get{
-                if(_state == null)
-                    _state = new DownloadState();
-                return _state;
-            }
-        }
-        
-        public override UpdateState Previous()
-        {
-            if (Installer == null) return State;
-
-            HideAll();
-            Installer.Directory.Visibility = Visibility.Visible;
-            return DirectoryState.State;
+           
         }
 
-        public override UpdateState Next()
+        public override void Next(Installer installer)
         {
-            if (Installer == null) return State;
-            
-            HideAll();
-            Installer.Finish.Visibility = Visibility.Visible;
-            return FinishState.State;
+           
         }
     }
 }

@@ -1,34 +1,22 @@
 ﻿using System.Windows;
 
-namespace Updater
+namespace Updater.States
 {
     public class DirectoryState : UpdateState
     {
-        private static DirectoryState _state;
+        public static DirectoryState State { get; } = new DirectoryState();
         
-        public static DirectoryState State
+        public override void Previous(Installer installer)
         {
-            get{
-                if(_state == null)
-                    _state = new DirectoryState();
-                return _state;
-            }
-        }
-        
-        public override UpdateState Previous()
-        {
-            if (Installer == null) return State;
-            HideAll();
-            Installer.Welcome.Visibility = Visibility.Visible;
-            return WelcomeState.State;
+            installer.Welcome.Visibility = Visibility.Visible;
+            installer.State = WelcomeState.State;
         }
 
-        public override UpdateState Next()
+        public override void Next(Installer installer)
         {
-            if (Installer == null) return State;;
-            HideAll();
-            Installer.Download.Visibility = Visibility.Visible;
-            return DownloadState.State;
+            installer.Download.Visibility = Visibility.Visible;
+            installer.State = DownloadState.State;
+            installer.DownloadVersion(installer.VersionLabel.Content.ToString());
         }
     }
 }

@@ -2,10 +2,7 @@ C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\bin\Debug\Updater.e
 C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\bin\Debug\Updater.exe
 C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\bin\Debug\Updater.pdb
 C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\Updater.csprojResolveAssemblyReference.cache
-C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\UpdateWindow.g.cs
 C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\Updater_MarkupCompile.cache
-C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\Updater_MarkupCompile.lref
-C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\UpdateWindow.baml
 C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\Updater.g.resources
 C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\Updater.Properties.Resources.resources
 C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\Updater.csproj.GenerateResource.cache
@@ -14,3 +11,8 @@ C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\Updater.e
 C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\Updater.pdb
 C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\Installer.g.cs
 C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\Installer.baml
+C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\bin\Debug\Updater.exe.manifest
+C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\bin\Debug\Updater.application
+C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\Updater.TrustInfo.xml
+C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\Updater.exe.manifest
+C:\Users\Wendall Martin\Source\Repos\Updater\Updater\Updater\obj\Debug\Updater.application

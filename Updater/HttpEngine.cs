@@ -4,21 +4,25 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
 using System.Net;
-using System.Text.RegularExpressions;
-using System.Windows;
-using System.Xml;
-using System.Xml.Serialization;
-using System.IO.Compression;
 using System.Threading;
+using System.Xml;
 
-namespace FTPUpdater
+namespace Updater
 {
     public class HttpEngine : UpdateEngine
     {
         public static string Url = "http://www.wrmcodeblocks.com/TheTimeApp/Updates";
         private List<DetailVersion> _versions;
         private ManualResetEvent _downloadWait = new ManualResetEvent(false);
+        
+        public HttpEngine(){}
 
+        public HttpEngine(string currentDirectory, Version currentVersion)
+        {
+            CurrentDirectory = currentDirectory;
+            CurrentVersion = currentVersion;
+        }
+        
         /// <summary>
         /// Returns list of Versions available on ftp update server.
         /// </summary>
@@ -90,19 +94,19 @@ namespace FTPUpdater
 
         public override void Update(Version version)
         {
-            if (Program.CurrentDirectory == "")
+            if (CurrentDirectory == "")
             {
-                throw new Exception($"Invalid directory!  {Program.CurrentDirectory}");
+                throw new Exception($"Invalid directory!  {CurrentDirectory}");
             }
 
-            if (!Directory.Exists(Program.CurrentDirectory))
+            if (!Directory.Exists(CurrentDirectory))
             {
-                Directory.CreateDirectory(Program.CurrentDirectory);
+                Directory.CreateDirectory(CurrentDirectory);
             }
 
-            string downloadFile = Program.CurrentDirectory + $"/{version}.zip";
+            string downloadFile = CurrentDirectory + $"/{version}.zip";
             // Delete old ftp updater
-            if (File.Exists(Path.Combine(Program.CurrentDirectory, "Updater.exe_OLD"))) File.Delete(Path.Combine(Program.CurrentDirectory, "Updater.exe_OLD"));
+            if (File.Exists(Path.Combine(CurrentDirectory, "Updater.exe_OLD"))) File.Delete(Path.Combine(CurrentDirectory, "Updater.exe_OLD"));
             try
             {
                 DownloadUpdate($"{Url}/{version}.zip", downloadFile);

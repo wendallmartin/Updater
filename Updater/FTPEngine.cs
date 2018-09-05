@@ -4,16 +4,18 @@ using System.IO;
 using System.Net;
 using System.Windows;
 
-namespace FTPUpdater
+namespace Updater
 {
     public class FTPEngine : UpdateEngine
     {
         public static string FtpUrl = "ftp://208.113.130.91/files/Wendall/TimeApp/";
         public static NetworkCredential FtpCredentials = new NetworkCredential("abcodeblocks", "Coding4HisGlory!");
 
-        public FTPEngine()
+        private string _currentDirectory;
+
+        public FTPEngine(string currentDirectory)
         {
-            
+            _currentDirectory = currentDirectory;
         }
 
         /// <summary>
@@ -93,9 +95,9 @@ namespace FTPUpdater
                     {
                         if (File.Exists(localFilePath))
                         {
-                            if (Path.GetFileName(localFilePath) == "FTPUpdater.exe")
+                            if (Path.GetFileName(localFilePath) == "Updater.exe")
                             {
-                                File.Move(Path.Combine(Program.CurrentDirectory, "FTPUpdater.exe"), Path.Combine(Program.CurrentDirectory, "FTPUpdater.exe_OLD"));       
+                                File.Move(Path.Combine(_currentDirectory, "Updater.exe"), Path.Combine(_currentDirectory, "Updater.exe_OLD"));       
                             }
                             else
                             {
@@ -124,18 +126,18 @@ namespace FTPUpdater
 
         public override void Update(Version version)
         {
-            if (Program.CurrentDirectory == "" || !Directory.Exists(Program.CurrentDirectory))
+            if (_currentDirectory == "" || !Directory.Exists(_currentDirectory))
             {
-                throw new Exception($"Invalid directory!  {Program.CurrentDirectory}");
+                throw new Exception($"Invalid directory!  {_currentDirectory}");
             }
             
             // Delete old ftp updater
-            if(File.Exists(Path.Combine(Program.CurrentDirectory, "FTPUpdater.exe_OLD")))
-                File.Delete(Path.Combine(Program.CurrentDirectory, "FTPUpdater.exe_OLD"));
+            if(File.Exists(Path.Combine(_currentDirectory, "Updater.exe_OLD")))
+                File.Delete(Path.Combine(_currentDirectory, "Updater.exe_OLD"));
 
             try
             {
-                DownloadUpdate(FtpUrl + version + "/", Program.CurrentDirectory);
+                DownloadUpdate(FtpUrl + version + "/", _currentDirectory);
             }
             catch (Exception e)
             {

@@ -3,7 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Updater"
         mc:Ignorable="d"
         Background="LightGray"
         WindowStyle="ToolWindow"
@@ -12,8 +11,14 @@
     <Grid>
         <Grid x:Name="Welcome" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Hidden">
             <Label Content="Welcome to The Time App installation!" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Top" Height="56" Width="475" Margin="0,50"/>
-            <Label x:Name ="UpdateVersionLabel" Content="-.-.-.-" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <Label x:Name = "VersionLabel" Content="-.-.-.-" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" />
             <Button Content="Next" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="75" Click="Btn_Next_Click" Margin="0,0,10,10" />
+        </Grid>
+        <Grid x:Name="Updates" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Visible">
+            <Label Content="Update available!" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Top" Height="56" Width="210" Margin="0,40"/>
+            <Button Content="Next" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="75" Click="Btn_Next_Click" Margin="0,0,10,10" />
+            <ComboBox x:Name="UpdateComboBox" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120"/>
+            <TextBlock x:Name="UpdateDetails" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Text="" Margin="0,120,0,0" Height="51" Width="195"/>
         </Grid>
         <Grid x:Name="Directory" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Hidden">
             <Label Content="Select directory for installation" Width="178" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,60"/>
@@ -22,7 +27,7 @@
             <Button Content="Prev" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="75" Click="Btn_Prev_Click" Margin="10,0,0,10" />
             <Button Content="Next" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="75" Click="Btn_Next_Click" Margin="0,0,10,10" />
         </Grid>
-        <Grid x:Name="Download" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Visible">
+        <Grid x:Name="Download" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Hidden">
             <Label Content="Downloading....." VerticalAlignment="Top" HorizontalAlignment="Left" Width="96" Margin="46,77,0,0" Height="26"/>
             <ProgressBar x:Name="ProgressBar" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="20" Margin="30,0,30,0"/>
             <Label x:Name="ProgressText" Content=" " HorizontalAlignment="Center" VerticalAlignment="Center"/>

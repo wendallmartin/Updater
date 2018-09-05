@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FTPUpdater
+namespace Updater
 {
     public class DetailVersion
     {

@@ -1,14 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace FTPUpdater
+namespace Updater
 {
     public abstract class UpdateEngine
     {
+        public enum InstanceType
+        {
+            Update,
+            Install
+        }
+        
+        public InstanceType Type;
+        
         public delegate void UpdateChangedDel(double recieved, double total);
         public UpdateChangedDel UpdateChangedEvent;
-
-        public string DownloadDirectory { get; internal set; }
+        
+        public string CurrentDirectory { get;  set; }
+        public Version CurrentVersion { get;  set; }
 
         /// <summary>
         /// Returns list of Versions available on ftp update server.

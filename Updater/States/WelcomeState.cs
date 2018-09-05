@@ -1,31 +1,20 @@
 ﻿using System.Windows;
 
-namespace Updater
+namespace Updater.States
 {
     public class WelcomeState : UpdateState
     {
-        private static WelcomeState _state;
+        public static WelcomeState State { get; } = new WelcomeState();
         
-        public static WelcomeState State
+        public override void Previous(Installer installer)
         {
-            get{
-                if(_state == null)
-                    _state = new WelcomeState();
-                return _state;
-            }
-        }
-        
-        public override UpdateState Previous()
-        {
-            return State;
+            
         }
 
-        public override UpdateState Next()
+        public override void Next(Installer installer)
         {
-            if (Installer == null) return State;
-            HideAll();
-            Installer.Directory.Visibility = Visibility.Visible;
-            return DirectoryState.State;
+            installer.Directory.Visibility = Visibility.Visible;
+            installer.State = DirectoryState.State;;
         }
     }
 }
