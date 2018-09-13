@@ -1,9 +1,9 @@
-﻿namespace Updater.States
+﻿namespace Downloader.States
 {
     public abstract class UpdateState
     {
-        public abstract void Previous(Installer installer);
+        public abstract void Previous(Downloader downloader);
         
-        public abstract void Next(Installer installer);
+        public abstract void Next(Downloader downloader);
     }
 }

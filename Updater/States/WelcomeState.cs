@@ -1,20 +1,20 @@
 ﻿using System.Windows;
 
-namespace Updater.States
+namespace Downloader.States
 {
     public class WelcomeState : UpdateState
     {
         public static WelcomeState State { get; } = new WelcomeState();
         
-        public override void Previous(Installer installer)
+        public override void Previous(Downloader downloader)
         {
             
         }
 
-        public override void Next(Installer installer)
+        public override void Next(Downloader downloader)
         {
-            installer.Directory.Visibility = Visibility.Visible;
-            installer.State = DirectoryState.State;;
+            downloader.Directory.Visibility = Visibility.Visible;
+            downloader.State = DirectoryState.State;;
         }
     }
 }

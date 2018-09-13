@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Updater
+namespace Downloader
 {
     public abstract class UpdateEngine
     {
@@ -15,9 +15,11 @@ namespace Updater
         
         public delegate void UpdateChangedDel(double recieved, double total);
         public UpdateChangedDel UpdateChangedEvent;
-        
-        public string CurrentDirectory { get;  set; }
+        public string Url = "http://www.wrmcodeblocks.com/TheTimeApp/Downloads";
+
+        public string DownloadDirectory { get;  set; }
         public Version CurrentVersion { get;  set; }
+        public Version UpdateVersion { get;  set; }
 
         /// <summary>
         /// Returns list of Versions available on ftp update server.

@@ -1,22 +1,22 @@
 ﻿using System.Windows;
 
-namespace Updater.States
+namespace Downloader.States
 {
     public class DirectoryState : UpdateState
     {
         public static DirectoryState State { get; } = new DirectoryState();
         
-        public override void Previous(Installer installer)
+        public override void Previous(Downloader downloader)
         {
-            installer.Welcome.Visibility = Visibility.Visible;
-            installer.State = WelcomeState.State;
+            downloader.Welcome.Visibility = Visibility.Visible;
+            downloader.State = WelcomeState.State;
         }
 
-        public override void Next(Installer installer)
+        public override void Next(Downloader downloader)
         {
-            installer.Download.Visibility = Visibility.Visible;
-            installer.State = DownloadState.State;
-            installer.DownloadVersion(installer.VersionLabel.Content.ToString());
+            downloader.Download.Visibility = Visibility.Visible;
+            downloader.State = DownloadState.State;
+            downloader.DownloadVersion(downloader.VersionLabel.Content.ToString());
         }
     }
 }

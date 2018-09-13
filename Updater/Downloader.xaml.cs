@@ -7,15 +7,15 @@ using System.Linq;
 using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
-using Updater.States;
+using Downloader.States;
 
-namespace Updater
+namespace Downloader
 {
     /// <inheritdoc />
     /// <summary>
     /// Interaction logic for Installer.xaml
     /// </summary>
-    public partial class Installer
+    public partial class Downloader
     {
         public readonly UpdateEngine Updater;
 
@@ -30,12 +30,11 @@ namespace Updater
             Finish.Visibility = Visibility.Hidden;
         }
 
-        public Installer(UpdateEngine updater)
+        public Downloader(UpdateEngine updater)
         {
             InitializeComponent();
 
             Updater = updater;
-            
             HideAll();
 
             switch (updater.Type)
@@ -44,15 +43,19 @@ namespace Updater
                     Welcome.Visibility = Visibility.Visible;
                     State = WelcomeState.State;
                     
+                    Updater.DownloadDirectory =
+                        DirectoryTextBlock.Text = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                    
                     if (Updater.GetUpdateVersions().Count > 0)
                     {
                         VersionLabel.Content = Updater.GetUpdateVersions().OrderBy(v => v.Version).Last().Version.ToString();
+                        WelcomeNext.IsEnabled = true;
                     }
 
                     break;
                 case UpdateEngine.InstanceType.Update:
                     Updates.Visibility = Visibility.Visible;
-                    State = global::Updater.States.Updates.State;
+                    State = global::Downloader.States.Updates.State;
                     
                     if (Updater.GetUpdateVersions().Count > 0)
                     {
@@ -71,8 +74,7 @@ namespace Updater
                     throw new ArgumentOutOfRangeException();
             }
 
-            DirectoryTextBlock.Text = Updater.CurrentDirectory;
-
+            DirectoryTextBlock.Text = Updater.DownloadDirectory;
         }
 
         private void OnUpdateSelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -94,6 +96,7 @@ namespace Updater
 
         public void SetDowloadProgress(double recieve, double total)
         {
+            if (Math.Abs(recieve) < .001 || Math.Abs(total) < .001) return;
             Dispatcher.Invoke(() =>
             {
                 ProgressBar.Value = recieve / total * 100;
@@ -110,10 +113,10 @@ namespace Updater
 
             if(result == System.Windows.Forms.DialogResult.OK)
             {
-                Updater.CurrentDirectory = dialog.SelectedPath;
+                Updater.DownloadDirectory = dialog.SelectedPath;
             }
 
-            DirectoryTextBlock.Text = Updater.CurrentDirectory;
+            DirectoryTextBlock.Text = Updater.DownloadDirectory;
         }
 
         public void DownloadVersion(string version)
@@ -124,32 +127,8 @@ namespace Updater
                 {
                     new Thread(() =>
                     {
-                        string oldName = Process.GetCurrentProcess().MainModule.FileName + "_OLD";
-                        if (File.Exists(oldName)) File.Delete(oldName);
-                        File.Move(Process.GetCurrentProcess().MainModule.FileName, Process.GetCurrentProcess().MainModule.FileName + "_OLD");
-                        Program.StopParentProcess(); // kills the process given at startup threw command line params
                         Updater.UpdateChangedEvent += SetDowloadProgress;
                         Updater.Update(new Version(version));
-                        string zipFile = Updater.CurrentDirectory + "//" + version + ".zip";
-                        using (FileStream zipToOpen = new FileStream(zipFile, FileMode.Open))
-                        {
-                            using (ZipArchive archive = new ZipArchive(zipToOpen, ZipArchiveMode.Update))
-                            {
-                                foreach (ZipArchiveEntry entry in archive.Entries)
-                                {
-                                    if (string.IsNullOrEmpty(entry.Name)) continue;
-                                    DirectoryInfo dir = new DirectoryInfo(Updater.CurrentDirectory);
-                                    IEnumerable<FileInfo> fileList = dir.GetFiles("*.*", SearchOption.AllDirectories);
-                                    IEnumerable<FileInfo> fileQuery = from file in fileList where file.Name == entry.Name orderby file.Name select file;
-                                    foreach (FileInfo info in fileQuery)
-                                    {
-                                        File.Delete(info.FullName);
-                                    }
-                                }
-                            }
-                        }
-
-                        ZipFile.ExtractToDirectory(zipFile, Updater.CurrentDirectory);
                         State = FinishState.State;
                         Dispatcher.Invoke(() =>
                         {

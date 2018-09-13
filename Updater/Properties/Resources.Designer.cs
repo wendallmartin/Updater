@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Updater.Properties {
+namespace Downloader.Properties {
     using System;
     
     

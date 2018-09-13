@@ -4,7 +4,7 @@ using System.IO;
 using System.Net;
 using System.Windows;
 
-namespace Updater
+namespace Downloader
 {
     public class FTPEngine : UpdateEngine
     {

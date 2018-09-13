@@ -55,7 +55,7 @@
     <ApplicationIcon>Updater.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>18F4F182CD17E15194A1D652165DD865677F358D</ManifestCertificateThumbprint>
@@ -64,7 +64,7 @@
     <ManifestKeyFile>Updater_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <GenerateManifests>true</GenerateManifests>
+    <GenerateManifests>false</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
     <TargetZone>LocalIntranet</TargetZone>
@@ -94,15 +94,15 @@
     <Compile Include="States\FinishState.cs" />
     <Compile Include="States\Updates.cs" />
     <Compile Include="States\UpdateState.cs" />
-    <Page Include="Installer.xaml">
+    <Page Include="Downloader.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Compile Include="FTPEngine.cs" />
     <Compile Include="HttpEngine.cs" />
     <Compile Include="DetailVersion.cs" />
-    <Compile Include="Installer.xaml.cs">
-      <DependentUpon>Installer.xaml</DependentUpon>
+    <Compile Include="Downloader.xaml.cs">
+      <DependentUpon>Downloader.xaml</DependentUpon>
     </Compile>
     <Compile Include="States\WelcomeState.cs" />
     <Compile Include="UpdateEngine.cs" />
@@ -125,7 +125,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Properties\app.manifest" />
-    <None Include="Updater_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Updater.ico" />

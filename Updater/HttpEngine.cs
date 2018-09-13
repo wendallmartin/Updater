@@ -7,20 +7,20 @@ using System.Net;
 using System.Threading;
 using System.Xml;
 
-namespace Updater
+namespace Downloader
 {
     public class HttpEngine : UpdateEngine
     {
-        public static string Url = "http://www.wrmcodeblocks.com/TheTimeApp/Updates";
         private List<DetailVersion> _versions;
         private ManualResetEvent _downloadWait = new ManualResetEvent(false);
         
         public HttpEngine(){}
 
-        public HttpEngine(string currentDirectory, Version currentVersion)
+        public HttpEngine(string downloadDirectory, Version currentVersion, string url)
         {
-            CurrentDirectory = currentDirectory;
+            DownloadDirectory = downloadDirectory;
             CurrentVersion = currentVersion;
+            Url = url;
         }
         
         /// <summary>
@@ -94,22 +94,22 @@ namespace Updater
 
         public override void Update(Version version)
         {
-            if (CurrentDirectory == "")
+            if (DownloadDirectory == "")
             {
-                throw new Exception($"Invalid directory!  {CurrentDirectory}");
+                throw new Exception($"Invalid directory!  {DownloadDirectory}");
+            }
+            
+            UpdateVersion = version;
+
+            if (!Directory.Exists(DownloadDirectory))
+            {
+                Directory.CreateDirectory(DownloadDirectory);
             }
 
-            if (!Directory.Exists(CurrentDirectory))
-            {
-                Directory.CreateDirectory(CurrentDirectory);
-            }
-
-            string downloadFile = CurrentDirectory + $"/{version}.zip";
-            // Delete old ftp updater
-            if (File.Exists(Path.Combine(CurrentDirectory, "Updater.exe_OLD"))) File.Delete(Path.Combine(CurrentDirectory, "Updater.exe_OLD"));
+            string downloadFile = DownloadDirectory + $"/{version}.exe";
             try
             {
-                DownloadUpdate($"{Url}/{version}.zip", downloadFile);
+                DownloadUpdate($"{Url}/{version}.exe", downloadFile);
                 _downloadWait.Reset();
                 _downloadWait.WaitOne();
             }

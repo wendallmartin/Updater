@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Updater
+namespace Downloader
 {
     public class DetailVersion
     {

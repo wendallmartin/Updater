@@ -1,18 +1,20 @@
-﻿namespace Updater.States
+﻿using System.IO;
+
+namespace Downloader.States
 {
     public class FinishState : UpdateState
     {
         public static FinishState State { get; } = new FinishState();
         
-        public override void Previous(Installer installer)
+        public override void Previous(Downloader downloader)
         {
             
         }
 
-        public override void Next(Installer installer)
+        public override void Next(Downloader downloader)
         {
-            Program.StartParentProcess(installer.Updater.CurrentDirectory);
-            installer.Close();
+            Program.StartInstall(Path.Combine(downloader.Updater.DownloadDirectory, downloader.Updater.UpdateVersion.ToString() + ".exe"));
+            downloader.Close();
         }
     }
 }

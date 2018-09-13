@@ -8,7 +8,7 @@ using System.Threading;
 using System.Windows;
 using MessageBox = System.Windows.MessageBox;
 
-namespace Updater.States
+namespace Downloader.States
 {
     public class Updates : UpdateState
     {
@@ -17,15 +17,15 @@ namespace Updater.States
         
         public static UpdateState State { get; } = new Updates();
         
-        public override void Previous(Installer installer)
+        public override void Previous(Downloader downloader)
         {
             
         }
 
-        public override void Next(Installer installer)
+        public override void Next(Downloader downloader)
         {
-            installer.Download.Visibility = Visibility.Visible;
-            installer.DownloadVersion(installer.UpdateComboBox.Text);
+            downloader.Download.Visibility = Visibility.Visible;
+            downloader.DownloadVersion(downloader.UpdateComboBox.Text);
         }
     }
 }
