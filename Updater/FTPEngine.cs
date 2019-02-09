@@ -4,27 +4,31 @@ using System.IO;
 using System.Net;
 using System.Windows;
 
-namespace Downloader
+namespace Updater
 {
-    public class FTPEngine : UpdateEngine
+    /// <summary>
+    /// This FTP update engine
+    /// has been depreciated.
+    /// </summary>
+    public class FtpEngine : UpdateEngine
     {
-        public static string FtpUrl = "ftp://208.113.130.91/files/Wendall/TimeApp/";
-        public static NetworkCredential FtpCredentials = new NetworkCredential("abcodeblocks", "Coding4HisGlory!");
+        private const string FtpUrl = "ftp://208.113.130.91/files/Wendall/TimeApp/";
+        private static readonly NetworkCredential FtpCredentials = new NetworkCredential("abcodeblocks", "Coding4HisGlory!");
 
-        private string _currentDirectory;
+        private readonly string _currentDirectory;
 
-        public FTPEngine(string currentDirectory)
+        public FtpEngine(string currentDirectory)
         {
             _currentDirectory = currentDirectory;
         }
-
+        
         /// <summary>
         /// Returns list of Versions available on ftp update server.
         /// </summary>
         /// <returns></returns>
         public override List<DetailVersion> GetUpdateVersions()
         {
-            List<DetailVersion> directorys = new List<DetailVersion>();
+            var directories = new List<DetailVersion>();
             try
             {
                 FtpWebRequest ftpWebRequest = (FtpWebRequest) WebRequest.Create(FtpUrl);
@@ -35,29 +39,29 @@ namespace Downloader
                 string line = streamReader.ReadLine();
                 while (!string.IsNullOrEmpty(line))
                 {
-                    directorys.Add(new DetailVersion(new Version(line), ""));
+                    directories.Add(new DetailVersion(new Version(line), ""));
                     line = streamReader.ReadLine();
                 }
 
                 streamReader.Close();
-                return directorys;
+                return directories;
             }
             catch (Exception)
             {
                 // do nothing
-                return directorys;
+                return directories;
             }
         }
 
-        public override void DownloadUpdate(string url, string localPath)
+        protected virtual void DownloadUpdate(string url, string localPath)
         {
             FtpWebRequest listRequest = (FtpWebRequest) WebRequest.Create(url);
             listRequest.Method = WebRequestMethods.Ftp.ListDirectoryDetails;
             listRequest.Credentials = FtpCredentials;
-            List<string> lines = new List<string>();
+            var lines = new List<string>();
             using (FtpWebResponse listResponse = (FtpWebResponse) listRequest.GetResponse())
             using (Stream listStream = listResponse.GetResponseStream())
-            using (StreamReader listReader = new StreamReader(listStream ?? throw new Exception("Value cannnot be null!")))
+            using (StreamReader listReader = new StreamReader(listStream ?? throw new Exception("Value cannot be null!")))
             {
                 while (!listReader.EndOfStream)
                 {
@@ -67,7 +71,7 @@ namespace Downloader
 
             foreach (string line in lines)
             {
-                string[] tokens = line.Split(new[] {' '}, 9, StringSplitOptions.RemoveEmptyEntries);
+                var tokens = line.Split(new[] {' '}, 9, StringSplitOptions.RemoveEmptyEntries);
                 string name = tokens[8];
                 string permissions = tokens[0];
                 string localFilePath = Path.Combine(localPath, name);

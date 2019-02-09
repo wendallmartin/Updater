@@ -7,19 +7,18 @@ using System.Net;
 using System.Threading;
 using System.Xml;
 
-namespace Downloader
+namespace Updater
 {
-    public class HttpEngine : UpdateEngine
+    public sealed class HttpEngine : UpdateEngine
     {
         private List<DetailVersion> _versions;
-        private ManualResetEvent _downloadWait = new ManualResetEvent(false);
+        private readonly ManualResetEvent _downloadWait = new ManualResetEvent(false);
         
         public HttpEngine(){}
 
-        public HttpEngine(string downloadDirectory, Version currentVersion, string url)
+        public HttpEngine(string downloadDirectory, string url)
         {
             DownloadDirectory = downloadDirectory;
-            CurrentVersion = currentVersion;
             Url = url;
         }
         
@@ -50,7 +49,7 @@ namespace Downloader
                                         _versions.Add(new DetailVersion(new Version(parsedString[0]), parsedString[1]));
                                     }
                                 }
-                                catch (Exception e)
+                                catch
                                 {
                                     // hungry catch eats exceptions
                                 }
@@ -67,7 +66,7 @@ namespace Downloader
             return _versions;
         }
 
-        public override void DownloadUpdate(string url, string localPath)
+        private void DownloadUpdate(string url, string localPath)
         {
             if (File.Exists(localPath)) File.Delete(localPath);
             File.Create(localPath).Close();

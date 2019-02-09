@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace Downloader.States
+namespace Updater.States
 {
     public class DirectoryState : UpdateState
     {

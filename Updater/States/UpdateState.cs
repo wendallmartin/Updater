@@ -1,4 +1,4 @@
-﻿namespace Downloader.States
+﻿namespace Updater.States
 {
     public abstract class UpdateState
     {

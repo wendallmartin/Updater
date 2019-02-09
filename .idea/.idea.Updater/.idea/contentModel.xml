@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Wendall Martin\.Rider2018.2\config\consoles\db" t="IncludeRecursive" />
-    <e p="C:\Users\Wendall Martin\.Rider2018.2\config\extensions" t="IncludeRecursive" />
-    <e p="C:\Users\Wendall Martin\.Rider2018.2\config\scratches" t="IncludeRecursive" />
-    <e p="C:\Users\Wendall Martin\.Rider2018.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Wendall Martin\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_Updater.1019297894.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Wendall Martin\.Rider2018.3\config\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\Wendall Martin\.Rider2018.3\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\Wendall Martin\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Wendall Martin\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Updater.1019297894.00" t="ExcludeRecursive" />
     <e p="C:\Users\Wendall Martin\Source\Repos\Updater\Updater" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="Updater" t="IncludeRecursive">

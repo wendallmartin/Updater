@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace Downloader.States
+namespace Updater.States
 {
     public class FinishState : UpdateState
     {
@@ -13,7 +13,7 @@ namespace Downloader.States
 
         public override void Next(Downloader downloader)
         {
-            Program.StartInstall(Path.Combine(downloader.Updater.DownloadDirectory, downloader.Updater.UpdateVersion.ToString() + ".exe"));
+            Program.StartInstall(Path.Combine(downloader.Updater.DownloadDirectory, downloader.Updater.UpdateVersion + ".exe"));
             downloader.Close();
         }
     }

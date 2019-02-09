@@ -1,17 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.IO;
-using System.IO.Compression;
 using System.Linq;
 using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
-using Downloader.States;
+using System.Windows.Forms;
+using Updater.States;
+using MessageBox = System.Windows.MessageBox;
 
-namespace Downloader
+namespace Updater
 {
-    /// <inheritdoc />
     /// <summary>
     /// Interaction logic for Installer.xaml
     /// </summary>
@@ -21,15 +18,6 @@ namespace Downloader
 
         public UpdateState State;
         
-        public void HideAll()
-        {
-            Welcome.Visibility = Visibility.Hidden;
-            Updates.Visibility = Visibility.Hidden;
-            Directory.Visibility = Visibility.Hidden;
-            Download.Visibility = Visibility.Hidden;
-            Finish.Visibility = Visibility.Hidden;
-        }
-
         public Downloader(UpdateEngine updater)
         {
             InitializeComponent();
@@ -55,7 +43,7 @@ namespace Downloader
                     break;
                 case UpdateEngine.InstanceType.Update:
                     Updates.Visibility = Visibility.Visible;
-                    State = global::Downloader.States.Updates.State;
+                    State = States.Updates.State;
                     
                     if (Updater.GetUpdateVersions().Count > 0)
                     {
@@ -77,6 +65,15 @@ namespace Downloader
             DirectoryTextBlock.Text = Updater.DownloadDirectory;
         }
 
+        private void HideAll()
+        {
+            Welcome.Visibility = Visibility.Hidden;
+            Updates.Visibility = Visibility.Hidden;
+            Directory.Visibility = Visibility.Hidden;
+            Download.Visibility = Visibility.Hidden;
+            Finish.Visibility = Visibility.Hidden;
+        }
+
         private void OnUpdateSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             UpdateDetails.Text = Updater.GetUpdateVersions().FirstOrDefault(v => v.Version.ToString() == UpdateComboBox.SelectedValue.ToString())?.Details;
@@ -94,22 +91,23 @@ namespace Downloader
             State.Previous(this);
         }
 
-        public void SetDowloadProgress(double recieve, double total)
+        private void SetDownloadProgress(double receive, double total)
         {
-            if (Math.Abs(recieve) < .001 || Math.Abs(total) < .001) return;
+            if (Math.Abs(receive) < .001 || Math.Abs(total) < .001) return;
             Dispatcher.Invoke(() =>
             {
-                ProgressBar.Value = recieve / total * 100;
-                ProgressText.Content = $"{recieve}mb of {total}mb";
+                ProgressBar.Value = receive / total * 100;
+                ProgressText.Content = $"{receive}mb of {total}mb";
             });
         }
 
         private void Btn_Browse_Click(object sender, RoutedEventArgs e)
         {
-            var dialog = new System.Windows.Forms.FolderBrowserDialog();
-            dialog.Description = @"Install location";
-            dialog.SelectedPath = @"C:\\Program Files\\";
-            System.Windows.Forms.DialogResult result = dialog.ShowDialog();
+            FolderBrowserDialog dialog = new FolderBrowserDialog
+            {
+                Description = @"Install location", SelectedPath = @"C:\\Program Files\\"
+            };
+            DialogResult result = dialog.ShowDialog();
 
             if(result == System.Windows.Forms.DialogResult.OK)
             {
@@ -127,7 +125,7 @@ namespace Downloader
                 {
                     new Thread(() =>
                     {
-                        Updater.UpdateChangedEvent += SetDowloadProgress;
+                        Updater.UpdateChangedEvent += SetDownloadProgress;
                         Updater.Update(new Version(version));
                         State = FinishState.State;
                         Dispatcher.Invoke(() =>

@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.IO;
 using System.Linq;
-using System.Security.Permissions;
-using System.Security.Principal;
 using System.Windows;
 
-namespace Downloader
+namespace Updater
 {
-    static class Program
+    internal static class Program
     {
         private static UpdateEngine _updater;
         
@@ -27,15 +24,17 @@ namespace Downloader
         /// The third arg that equals false if
         /// we don't show "Up to date" dialog if up to date.
         /// </summary>
-        public static string UpToDate;
+        private static string _upToDate;
 
         [STAThread]
         private static void Main(string[] args)
         {
-            if (args.Length < 3)
+            if (args.Length < 3)// Fresh install.
             {
-                _updater = new HttpEngine();
-                _updater.Type = UpdateEngine.InstanceType.Install;
+                _updater = new HttpEngine
+                {
+                    Type = UpdateEngine.InstanceType.Install
+                };
                 Downloader download = new Downloader(_updater);
                 download.ShowDialog();
                 return;
@@ -45,9 +44,9 @@ namespace Downloader
             _downloadDirectory = args[1];
             _url = args[2];
             
-            _updater = new HttpEngine(_downloadDirectory, _currentVersion, _url);
+            _updater = new HttpEngine(_downloadDirectory, _url);
             
-            if (args.Length >= 4) UpToDate = args[3];
+            if (args.Length >= 4) _upToDate = args[3];
             
             var versions = new List<DetailVersion>(_updater.GetUpdateVersions().OrderBy(v => v.Version));
             if (versions.Count > 0)
@@ -61,9 +60,9 @@ namespace Downloader
                         Downloader updater = new Downloader(_updater);
                         updater.ShowDialog();
                     }
-                    catch (Exception e) // Other wise if the server is wrong or somethingwe get a hidious error message
+                    catch (Exception e) // Other wise if the server is wrong or something we get a terrible error message
                     {
-                        if (UpToDate != "false")
+                        if (_upToDate != "false")
                         {
                             MessageBox.Show(e.ToString());
                         }   
@@ -71,7 +70,7 @@ namespace Downloader
                 }
                 else
                 {
-                    if (UpToDate != "false")
+                    if (_upToDate != "false")
                     {
                         MessageBox.Show("Up to date!");
                     }       
@@ -79,7 +78,7 @@ namespace Downloader
             }
             else
             {
-                if (UpToDate != "false")
+                if (_upToDate != "false")
                 {
                     MessageBox.Show("Cannot communicate with server!");
                 }   
@@ -88,20 +87,11 @@ namespace Downloader
 
         public static void StartInstall(string updaterCurrentDirectory)
         {
-            var startinfo = new ProcessStartInfo();
-            startinfo.WorkingDirectory = _downloadDirectory;
-            startinfo.FileName = updaterCurrentDirectory;
-            Process.Start(startinfo);
-        }
-
-        public static bool IsAdminProcess()
-        {
-            using (WindowsIdentity identity = WindowsIdentity.GetCurrent())
+            ProcessStartInfo startInfo = new ProcessStartInfo
             {
-                WindowsPrincipal principal = new WindowsPrincipal(identity);
-                return principal.IsInRole(WindowsBuiltInRole.Administrator);
-            }
-        }
-        
+                WorkingDirectory = _downloadDirectory, FileName = updaterCurrentDirectory
+            };
+            Process.Start(startInfo);
+        }        
     }
 }
